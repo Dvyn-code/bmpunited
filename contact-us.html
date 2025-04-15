@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>…United To Serve Others</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Ovo&display=swap');
+        @import "tailwindcss";
+
+        @font-face {
+            font-family: Oswald;
+            font-style: normal;
+            font-weight: 200 700;
+            font-display: swap;
+            src: url("/fonts/Oswald.woff2") format("woff2");
+        }
+
+        .bangers-font {
+            font-family: "Bangers", system-ui;
+        }
+
+        .carter-font {
+            font-family: "Carter One", cursive;
+        }
+
+        .ovo-font {
+            font-family: "Ovo", serif;
+        }
+
+        .open-sans {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            /* Replace <weight> with actual values like 300, 400, 600, etc. */
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+        }
+
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+
+
+<body class="bg-white text-gray-900">
+ <!-- Navigation Bar -->
+ <nav class="relative bg-[#CCEFFF] p-5 flex items-center justify-between z-50">
+    <!-- Logo (Left) -->
+    <div class="flex-shrink-0">
+      <img src="./assets/logo.png" alt="Team Meeting" class="h-[50px] object-contain">
+    </div>
+  
+    <!-- Desktop Nav (Centered) -->
+    <ul class="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 space-x-[40px] items-center">
+      <!-- HOME with Dropdown -->
+      <li class="relative group">
+        <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans active:text-blue-500">Home</a>
+        <div
+          class="absolute left-0 mt-2 w-40 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+                 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 2.0</a>
+          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 1.0</a>
+        </div>
+      </li>
+      <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a></li>
+      <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a></li>
+    </ul>
+  
+    <!-- Mobile Menu Trigger (Right) -->
+    <div class="md:hidden cursor-pointer text-3xl" onclick="toggleMobileMenu()">☰</div>
+  
+    <!-- Mobile Dropdown (Full Width) -->
+    <ul id="mobileMenu"
+      class="hidden absolute top-full left-0 w-full bg-white flex-col space-y-4 mt-2 p-4 shadow-lg z-50 rounded md:hidden">
+      <!-- HOME with Nested Dropdown -->
+      <li class="relative">
+        <a href="#" onclick="toggleSubMenu()" class="ovo-font text-xl hover:text-blue-500 open-sans block">Home ▾</a>
+        <div id="mobileSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+          <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 2.0</a>
+          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 1.0</a>
+        </div>
+      </li>
+      <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans block">About Us</a></li>
+      <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">Contact Us</a></li>
+    </ul>
+  </nav>
+  
+
+
+    <!-- Contact Us Section -->
+    <div class="mt-10 bg-[url('./assets/image5.png')] bg-no-repeat">
+        <div class="justify-center mt-10 max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 flex flex-col ">
+            <div class="w-full md:w-2/3 p-4 justify-center">
+                <h2 class="text-lg font-semibold ovo-font">Contact Us & Get In <span
+                        class="text-blue-500 ovo-font">Touch</span></h2>
+                <div class="w-16 h-1 bg-purple-500 my-2"></div>
+                <div class="space-y-4  mt-4">
+                    <div class="flex space-x-4">
+                        <input type="text" placeholder="Your Name..." class="w-1/2 p-2 bg-blue-100 rounded">
+                        <input type="text" placeholder="Your Surname..." class="w-1/2 p-2 bg-blue-100 rounded">
+                    </div>
+                    <input type="email" placeholder="Your E-mail..." class="w-full p-2 bg-blue-100 rounded">
+                    <textarea placeholder="Your Message" class="w-full p-2 bg-blue-100 rounded h-24"></textarea>
+                    <button class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md open-sans">Send Message
+                        Now</button>
+                </div>
+                <div class="flex flex-wrap justify-center mt-10 bg-blue-100 h-auto rounded-bl-lg rounded-br-lg px-4 sm:px-10 py-6 gap-6">
+                    <!-- Educational Assistance -->
+                    <div class="flex flex-col items-center space-y-2 w-full sm:w-auto">
+                      <img src="./assets/phone.png" alt="Phone Icon" class="w-[18px] h-[22px] object-contain rounded-lg">
+                      <span class="block font-medium text-sm sm:text-base text-center open-sans">Educational Assistance</span>
+                    </div>
+                  
+                    <!-- Email -->
+                    <div class="flex flex-col items-center space-y-2 w-full sm:w-auto">
+                      <img src="./assets/email.png" alt="Email Icon" class="w-[19px] h-[22px] object-contain rounded-lg">
+                      <span class="block font-medium text-sm sm:text-base text-center open-sans">Charlie.Ukwu@bmpu.org</span>
+                    </div>
+                  
+                    <!-- Location -->
+                    <div class="flex flex-col items-center space-y-2 w-full sm:w-auto">
+                      <img src="./assets/location.png" alt="Location Icon" class="w-[18px] h-[22px] object-contain rounded-lg">
+                      <span class="block font-medium text-xs sm:text-sm text-center open-sans">
+                        1501 Timber Wolf Dr. Durham, NC 27713<br class="block sm:hidden" />
+                        United States
+                      </span>
+                    </div>
+                  </div>
+                  
+
+            </div>
+            <div class="w-full md:w-[65%] md:h-[60%]">
+                <img 
+                  src="./assets/map.png" 
+                  alt="Map" 
+                  class="w-[80%] h-auto sm:w-[90%] sm:max-h-[200px] md:w-full md:h-full object-cover rounded-lg mx-auto"
+                >
+              </div>
+              
+        </div>
+    </div>
+
+    <div
+        class="flex flex-col justify-center items-center h-[200px] bg-[url('./assets/image4.png')] bg-no-repeat bg-right-bottom bg-[length:150px_150px]">
+        <!-- Social Icons -->
+        <div class="bottom-[-200px] flex flex-row space-x-4">
+            <img src="./assets/facebook.png" alt="Facebook" class="object-contain rounded-lg ">
+            <img src="./assets/in.png" alt="LinkedIn" class="object-contain rounded-lg ">
+            <img src="./assets/whatsapp.png" alt="WhatsApp" class="object-contain rounded-lg ">
+        </div>
+
+        <!-- Footer Section -->
+        <div class="flex items-center justify-center w-full p-4 
+            ">
+            <p class="text-center">
+                Copyright &copy; 2025 <span class="mx-2 open-sans">BmpUnited.</span> <span class="mx-2 open-sans">All
+                    rights
+                    reserved.</span> </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+  
+    function toggleSubMenu() {
+      const submenu = document.getElementById('mobileSubMenu');
+      submenu.classList.toggle('hidden');
+    }
+  </script>
+  
