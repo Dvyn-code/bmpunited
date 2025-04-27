@@ -177,35 +177,96 @@
         <!-- HOME with Dropdown -->
         <li class="relative group">
           <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans active:text-blue-500">Home</a>
-          <div
-            class="absolute left-0 mt-2 w-40 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
-                   opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-            <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 2.0</a>
-            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 1.0</a>
+          <div class="absolute left-0 mt-2 w-40 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+            opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
           </div>
         </li>
-        <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a></li>
+    
+        <!-- SERVICES with Dropdown -->
+        <li class="relative group">
+          <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">Services</a>
+          <div class="absolute left-0 mt-2 w-40 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+            opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Blogs</a>
+            <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
+          </div>
+        </li>
+    
+        <!-- ABOUT US with Dropdown -->
+        <li class="relative group">
+          <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a>
+          <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+            opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Project Updates</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
+            <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
+            <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+            <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+          </div>
+        </li>
+    
         <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a></li>
       </ul>
     
-      <!-- Mobile Menu Trigger (Right) -->
+      <!-- Mobile Menu Trigger -->
       <div class="md:hidden cursor-pointer text-3xl" onclick="toggleMobileMenu()">☰</div>
     
-      <!-- Mobile Dropdown (Full Width) -->
+      <!-- Mobile Menu -->
       <ul id="mobileMenu"
         class="hidden absolute top-full left-0 w-full bg-white flex-col space-y-4 mt-2 p-4 shadow-lg z-50 rounded md:hidden">
-        <!-- HOME with Nested Dropdown -->
+    
+        <!-- HOME Mobile -->
         <li class="relative">
-          <a href="#" onclick="toggleSubMenu()" class="ovo-font text-xl hover:text-blue-500 open-sans block">Home ▾</a>
-          <div id="mobileSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+          <a href="#" onclick="toggleSubMenu('homeSubMenu')" class="ovo-font text-xl hover:text-blue-500 open-sans block">Home ▾</a>
+          <div id="homeSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
             <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 2.0</a>
             <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 1.0</a>
           </div>
         </li>
-        <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans block">About Us</a></li>
+    
+        <!-- SERVICES Mobile -->
+        <li class="relative">
+          <a href="#" onclick="toggleSubMenu('servicesSubMenu')" class="ovo-font text-xl hover:text-blue-500 open-sans block">Services ▾</a>
+          <div id="servicesSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+            <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Blogs</a>
+            <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
+          </div>
+        </li>
+    
+        <!-- ABOUT US Mobile -->
+        <li class="relative">
+          <a href="#" onclick="toggleSubMenu('aboutSubMenu')" class="ovo-font text-xl hover:text-blue-500 open-sans block">About Us ▾</a>
+          <div id="aboutSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+            <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Project Updates</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
+            <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
+            <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+            <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
+            <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+          </div>
+        </li>
+    
         <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">Contact Us</a></li>
       </ul>
     </nav>
+  
     
 
      
@@ -224,7 +285,7 @@
       <div id="textBox" class="bg-[#d4f1ff] rounded-xl shadow-lg p-6 max-w-md border border-gray-500 flex-1">
         <h2 class="poppins-bold text-xl font-bold mb-4 text-center">Change is Here</h2>
         <p class="poppins-bold text-base mb-4">You probably noticed a change in the looks of bmpUnited website.</p>
-        <p class="poppins-bold text-base mb-4">Nothing wrong with your eyes. The change is from us: Adapting to changes in the business environment.</p>
+        <p class="poppins-bold text-base mb-4">Nothing wrong with your eyes. The change is from us: adapting to changes in the business environment.</p>
         <p class="poppins-bold text-base mb-4">As the Greek philosopher, Heraclitus, observed many years ago,</p>
         <p class="poppins-bold text-base italic">“The only constant in life is change”.</p>
       </div>
@@ -246,13 +307,40 @@
     
   </section>
 
-  <a href="https://vm.tiktok.com/ZMBbodNY9" target="_blank" rel="noopener noreferrer">
-  <div id="messageBox" class="hidden flex-col bg-[#d4f1ff] rounded-xl mt-12 shadow-lg p-6 mr-[20%] ml-[20%] border border-gray-500">
-    <h2 class="poppins-bold text-base sm:text-sm md:text-xl font-bold mb-4 text-center">
-      People seem to misunderstand money (See Videos)
-    </h2>
+<!-- Message Box Button -->
+<div onclick="openVideoPopup()" 
+  id="messageBox" 
+  class="hidden cursor-pointer flex-col bg-[#d4f1ff] rounded-xl mt-12 shadow-lg p-6 mr-[20%] ml-[20%] border border-gray-500">
+  
+  <h2 class="poppins-bold text-base sm:text-sm md:text-xl font-bold mb-4 text-center">
+    People seem to misunderstand money (See Videos)
+  </h2>
+
+</div>
+
+
+<!-- Popup Modal -->
+<div id="videoPopup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+  <div class="bg-white rounded-lg overflow-hidden shadow-xl w-full max-w-2xl relative">
+    
+    <!-- Close Button -->
+    <button onclick="closeVideoPopup()" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+
+    <!-- Video -->
+    <video id="popupVideo" controls class="w-full h-[350px]">
+      <source id="videoSource" src="./assets/vid1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Next Button -->
+    <div class="flex justify-center p-4">
+      <button onclick="playNextVideo()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+        Next Video
+      </button>
+    </div>
+
   </div>
-</a>
+</div>
   
 
 </div>
@@ -307,7 +395,7 @@
           const heading = box.querySelector('h2');
           const paragraphs = box.querySelectorAll('p');
           heading.textContent = 'So why change?';
-          paragraphs[0].textContent = 'Beyond the fact that change is  inevitable; It turns out that in rushing to  be all things to all people during and  after  COVID-19,  we  probably     overextend ourselves.   More importantly, our contracts were  not fulfilled as signed by beneficiaries.   Zero % interest loan notwithstanding.';
+          paragraphs[0].textContent = 'Beyond the fact that change is  inevitable; It turns out that in rushing to  be all things to all people during and  after  COVID-19,  we  probably overextended ourselves. More importantly, our contracts were  not fulfilled as signed by beneficiaries.   Zero % interest loan notwithstanding.';
           paragraphs[1].textContent = '';
           paragraphs[2].textContent = '';
           paragraphs[3].textContent = '';
@@ -317,7 +405,7 @@
           const rheading = rbox.querySelector('h2');
           const rparagraphs = rbox.querySelectorAll('p');
   
-          rheading.textContent = 'Slow or non-payment.';
+          rheading.textContent = 'Slow or non-payment(no?)';
           rparagraphs[0].textContent = 'A 17% success rate is not sustainable  under any condition. One must choose  to ignore reality and go under or take  corrective steps. We chose the latter. To  offer you a cup half full and still stay in  service.';
           rparagraphs[1].textContent = '';
           rparagraphs[2].textContent = '';
@@ -397,3 +485,41 @@
       submenu.classList.toggle('hidden');
     }
   </script>
+
+  
+<script>
+  let currentVideoIndex = 0;
+  const videos = [
+    './assets/vid1.mp4', 
+    './assets/vid2.mp4'
+  ];
+
+  function openVideoPopup() {
+    document.getElementById('videoPopup').classList.remove('hidden');
+    currentVideoIndex = 0;
+    setVideoSource(videos[currentVideoIndex]);
+  }
+
+  function closeVideoPopup() {
+    document.getElementById('videoPopup').classList.add('hidden');
+    const video = document.getElementById('popupVideo');
+    video.pause();
+    video.currentTime = 0;
+  }
+
+  function playNextVideo() {
+    currentVideoIndex++;
+    if (currentVideoIndex >= videos.length) {
+      currentVideoIndex = 0; // Optional: Loop back to the first video
+    }
+    setVideoSource(videos[currentVideoIndex]);
+  }
+
+  function setVideoSource(src) {
+    const video = document.getElementById('popupVideo');
+    const source = document.getElementById('videoSource');
+    source.src = src;
+    video.load();
+    video.play();
+  }
+</script>

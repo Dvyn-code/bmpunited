@@ -176,35 +176,96 @@
           <!-- HOME with Dropdown -->
           <li class="relative group">
             <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans active:text-blue-500">Home</a>
-            <div
-              class="absolute left-0 mt-2 w-40 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
-                     opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 2.0</a>
-              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 1.0</a>
+            <div class="absolute left-0 mt-2 w-40 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+              opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
             </div>
           </li>
-          <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a></li>
+      
+          <!-- SERVICES with Dropdown -->
+          <li class="relative group">
+            <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">Services</a>
+            <div class="absolute left-0 mt-2 w-40 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+              opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Blogs</a>
+              <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
+            </div>
+          </li>
+      
+          <!-- ABOUT US with Dropdown -->
+          <li class="relative group">
+            <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a>
+            <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+              opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Project Updates</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
+              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
+              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+            </div>
+          </li>
+      
           <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a></li>
         </ul>
       
-        <!-- Mobile Menu Trigger (Right) -->
+        <!-- Mobile Menu Trigger -->
         <div class="md:hidden cursor-pointer text-3xl" onclick="toggleMobileMenu()">☰</div>
       
-        <!-- Mobile Dropdown (Full Width) -->
+        <!-- Mobile Menu -->
         <ul id="mobileMenu"
           class="hidden absolute top-full left-0 w-full bg-white flex-col space-y-4 mt-2 p-4 shadow-lg z-50 rounded md:hidden">
-          <!-- HOME with Nested Dropdown -->
+      
+          <!-- HOME Mobile -->
           <li class="relative">
-            <a href="#" onclick="toggleSubMenu()" class="ovo-font text-xl hover:text-blue-500 open-sans block">Home ▾</a>
-            <div id="mobileSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+            <a href="#" onclick="toggleSubMenu('homeSubMenu')" class="ovo-font text-xl hover:text-blue-500 open-sans block">Home ▾</a>
+            <div id="homeSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
               <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 2.0</a>
               <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited 1.0</a>
             </div>
           </li>
-          <li><a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans block">About Us</a></li>
+      
+          <!-- SERVICES Mobile -->
+          <li class="relative">
+            <a href="#" onclick="toggleSubMenu('servicesSubMenu')" class="ovo-font text-xl hover:text-blue-500 open-sans block">Services ▾</a>
+            <div id="servicesSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Blogs</a>
+              <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
+            </div>
+          </li>
+      
+          <!-- ABOUT US Mobile -->
+          <li class="relative">
+            <a href="#" onclick="toggleSubMenu('aboutSubMenu')" class="ovo-font text-xl hover:text-blue-500 open-sans block">About Us ▾</a>
+            <div id="aboutSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Project Updates</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
+              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
+              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+            </div>
+          </li>
+      
           <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">Contact Us</a></li>
         </ul>
       </nav>
+    
       
       
     <!-- Main Section -->
@@ -217,11 +278,11 @@
         </p>
         <button onclick="window.location.href='main.html'"
             class="poppins-bold bg-black text-white py-2 px-6 rounded-md font-semibold hover:bg-gray-800">
-            Visit bmpUnited
+            Embracing Change
         </button>
         <button onclick="window.location.href='pages.html'"
         class="poppins-bold bg-black text-white py-2 px-6 rounded-md font-semibold hover:bg-gray-800">
-        Explore more
+        bmpUnited
     </button>
 
     </main>
@@ -257,14 +318,15 @@
 </body>
 
 </html>
+<!-- Scripts for toggling mobile dropdowns -->
 <script>
     function toggleMobileMenu() {
-        const menu = document.getElementById('mobileMenu');
-        menu.classList.toggle('hidden');
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
     }
-
-    function toggleSubMenu() {
-        const submenu = document.getElementById('mobileSubMenu');
-        submenu.classList.toggle('hidden');
+  
+    function toggleSubMenu(id) {
+      const submenu = document.getElementById(id);
+      submenu.classList.toggle('hidden');
     }
-</script>
+  </script>
