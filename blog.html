@@ -301,9 +301,12 @@
       menu.classList.toggle('hidden');
     }
   
-    function toggleSubMenu() {
-      const submenu = document.getElementById('mobileSubMenu');
-      submenu.classList.toggle('hidden');
+    function toggleSubMenu(subMenuId) {
+      const submenu = document.getElementById(subMenuId);
+      if (submenu) {
+        submenu.classList.toggle('hidden');
+      }
     }
   </script>
+  
   

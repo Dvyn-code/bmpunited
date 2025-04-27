@@ -812,8 +812,11 @@
       menu.classList.toggle('hidden');
     }
   
-    function toggleSubMenu(id) {
-      const submenu = document.getElementById(id);
-      submenu.classList.toggle('hidden');
+    function toggleSubMenu(subMenuId) {
+      const submenu = document.getElementById(subMenuId);
+      if (submenu) {
+        submenu.classList.toggle('hidden');
+      }
     }
   </script>
+  

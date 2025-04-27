@@ -239,14 +239,17 @@
 </html>
 
 <script>
-    function toggleMobileMenu() {
-      const menu = document.getElementById('mobileMenu');
-      menu.classList.toggle('hidden');
-    }
-  
-    function toggleSubMenu() {
-      const submenu = document.getElementById('mobileSubMenu');
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('hidden');
+  }
+
+  function toggleSubMenu(subMenuId) {
+    const submenu = document.getElementById(subMenuId);
+    if (submenu) {
       submenu.classList.toggle('hidden');
     }
-  </script>
+  }
+</script>
+
   
