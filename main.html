@@ -378,106 +378,119 @@
 <body class="text-gray-800 font-sans">
 <!-- Navigation Bar -->
 <nav class="relative bg-[#CCEFFF] p-5 flex items-center justify-between z-50">
-    <!-- Logo (Left) -->
+    <!-- Logo -->
     <div class="flex-shrink-0">
       <img src="./assets/logo.png" alt="Team Meeting" class="h-[50px] object-contain">
     </div>
   
-    <!-- Desktop Nav (Centered) -->
+    <!-- Desktop Navigation -->
     <ul class="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 space-x-[40px] items-center">
-      <!-- HOME with Dropdown -->
+      <!-- Home -->
       <li class="relative group">
-        <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans active:text-blue-500">Home</a>
-        <div class="absolute left-0 mt-2 w-40 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+        <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Home</a>
+        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
           opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-          <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
+          <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
           <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
         </div>
       </li>
   
-      <!-- SERVICES with Dropdown -->
+      <!-- Services -->
       <li class="relative group">
         <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">Services</a>
-        <div class="absolute left-0 mt-2 w-40 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
           opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-          <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Blogs</a>
+          
+          <!-- Projects Submenu -->
+          <div class="relative group/sub">
+            <a href="main.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Projects <span class="ml-2">›</span>
+            </a>
+            <div class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+              opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
+              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Project Updates</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
+              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
+              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+              <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
+              <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+            </div>
+          </div>
+  
+          <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
           <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
         </div>
       </li>
   
-      <!-- ABOUT US with Dropdown -->
-      <li class="relative group">
-        <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a>
-        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
-          opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-          <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Project Updates</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
-          <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
-          <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
-          <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
-        </div>
+      <li>
+        <a href="about-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a>
       </li>
-  
-      <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a></li>
+      <li>
+        <a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a>
+      </li>
     </ul>
   
     <!-- Mobile Menu Trigger -->
     <div class="md:hidden cursor-pointer text-3xl" onclick="toggleMobileMenu()">☰</div>
   
-    <!-- Mobile Menu -->
-    <ul id="mobileMenu"
-      class="hidden absolute top-full left-0 w-full bg-white flex-col space-y-4 mt-2 p-4 shadow-lg z-50 rounded md:hidden">
-  
-      <!-- HOME Mobile -->
+    <!-- Mobile Navigation -->
+    <ul id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white flex-col space-y-4 mt-2 p-4 shadow-lg z-50">
+      <!-- Home Mobile -->
       <li class="relative">
-        <a href="#" onclick="toggleSubMenu('homeSubMenu')" class="ovo-font text-xl hover:text-blue-500 open-sans block">Home ▾</a>
+        <a href="#" onclick="toggleSubMenu('homeSubMenu', event)" class="ovo-font text-xl hover:text-blue-500 open-sans block">Home ▾</a>
         <div id="homeSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
-          <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
+          <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
           <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
         </div>
       </li>
   
-      <!-- SERVICES Mobile -->
+      <!-- Services Mobile -->
       <li class="relative">
-        <a href="#" onclick="toggleSubMenu('servicesSubMenu')" class="ovo-font text-xl hover:text-blue-500 open-sans block">Services ▾</a>
+        <a href="#" onclick="toggleSubMenu('servicesSubMenu', event)" class="ovo-font text-xl hover:text-blue-500 open-sans block">Services ▾</a>
         <div id="servicesSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
-          <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Blogs</a>
+          
+          <!-- Projects Mobile Submenu -->
+          <div class="relative">
+            <a href="#" onclick="toggleSubMenu('projectsSubMenuMobile', event)" 
+              class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Projects ▾
+            </a>
+            <div id="projectsSubMenuMobile" class="hidden ml-4 mt-2 bg-[#CCEFFF] rounded-md border border-gray-200">
+                <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
+                <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Project Updates</a>
+                <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
+                <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
+                <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
+                <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
+                <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+                <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
+                <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+                <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
+                <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
+                <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+            </div>
+          </div>
+  
+          <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
           <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
         </div>
       </li>
   
-      <!-- ABOUT US Mobile -->
-      <li class="relative">
-        <a href="#" onclick="toggleSubMenu('aboutSubMenu')" class="ovo-font text-xl hover:text-blue-500 open-sans block">About Us ▾</a>
-        <div id="aboutSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
-          <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Project Updates</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
-          <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
-          <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
-          <a href="main.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
-        </div>
+      <li>
+        <a href="about-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">About Us</a>
       </li>
-  
-      <li><a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">Contact Us</a></li>
+      <li>
+        <a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">Contact Us</a>
+      </li>
     </ul>
   </nav>
-
+  
   <!-- Hero Section -->
   <section class="text-center py-12 px-4 mb-24 md:px-20">
     <div class="flex justify-center items-center mb-24 md:mb-12 mt-12 relative"> <!-- Changed to relative parent -->
@@ -510,7 +523,7 @@
     
     <!-- Intro Page Button -->
     <a href="index.html" class="open-sans bg-[#10B3FD] text-white px-6 py-2 rounded-full inline-block">
-        Intro page
+        bmpUnited
     </a>
 </section>
 
@@ -518,9 +531,9 @@
   <section id="services" class="flex flex-col md:flex-row items-start gap-8 md:gap-60 px-4 md:px-20 py-12 md:py-50 bg-white">
     <!-- Left Side -->
     <div class="flex flex-col items-start gap-4">
-      <button class="lato-black px-4 py-2 rounded-full bg-[#05668d] text-white text-lg md:text-xl font-medium">
+      <!-- <button class="lato-black px-4 py-2 rounded-full bg-[#05668d] text-white text-lg md:text-xl font-medium">
         Services
-      </button>
+      </button> -->
       <h2 class="lato-bold text-4xl md:text-6xl font-bold text-black leading-tight">
         Services<br>Provided
       </h2>
@@ -704,21 +717,21 @@
         <img src="./assets/Photo.png" alt="Farms" class="w-full h-48 object-cover">
         <div class="p-4">
           <h6 class="font-semibold mb-2 lato-bold">Going To The Farms</h6>
-          <a href="#" class="text-blue-600 lato-bold">Read Story →</a>
+          <a href="#" class="text-blue-600 lato-bold">Learn more →</a>
         </div>
       </div>
       <div class="bg-white border rounded-lg overflow-hidden shadow-md">
         <img src="./assets/projects.png" alt="Project List" class="w-full h-48 object-cover">
         <div class="p-4">
           <h4 class="font-semibold mb-2 lato-bold">Work Done</h4>
-          <a href="#" class="text-blue-600 lato-bold">Read Story →</a>
+          <a href="#" class="text-blue-600 lato-bold">Learn more →</a>
         </div>
       </div>
       <div class="bg-white border rounded-lg overflow-hidden shadow-md">
         <img src="./assets/wallet.png" alt="No Money" class="w-full h-48 object-cover">
         <div class="p-4">
           <h4 class="font-semibold mb-2 lato-bold">No Money</h4>
-          <a href="#" class="text-blue-600 lato-bold">Read Story →</a>
+          <a href="#" class="text-blue-600 lato-bold">Learn more →</a>
         </div>
       </div>
     </div>
@@ -733,15 +746,15 @@
         <h2 class="text-4xl md:text-6xl font-bold text-black mb-8 lato-bold">Find Out More About Us</h2>
         
         <div class="flex flex-wrap gap-4">
-          <a href="#" class="flex lato-bold items-center justify-center gap-2 bg-[#073b4c] text-white font-medium px-8 py-4 rounded-full hover:bg-[#05506e] transition">
+          <a href="about-us.html" class="flex lato-bold items-center justify-center gap-2 bg-[#073b4c] text-white font-medium px-8 py-4 rounded-full hover:bg-[#05506e] transition">
             About Us
             <span class="text-white text-xl lato-bold">→</span>
           </a>
-          <a href="#" class="flex lato-bold items-center justify-center gap-2 bg-[#073b4c] text-white font-medium px-8 py-4 rounded-full hover:bg-[#05506e] transition">
+          <a href="contact-us.html" class="flex lato-bold items-center justify-center gap-2 bg-[#073b4c] text-white font-medium px-8 py-4 rounded-full hover:bg-[#05506e] transition">
             Contact Us
             <span class="text-white text-xl lato-bold">→</span>
           </a>
-          <a href="#" class="flex items-center lato-bold justify-center gap-2 bg-[#073b4c] text-white font-medium px-8 py-4 rounded-full hover:bg-[#05506e] transition">
+          <a href="testimonials.html" class="flex items-center lato-bold justify-center gap-2 bg-[#073b4c] text-white font-medium px-8 py-4 rounded-full hover:bg-[#05506e] transition">
             Testimonials
             <span class="text-white text-xl lato-bold">→</span>
           </a>
@@ -762,7 +775,7 @@
 
   <!-- Footer -->
   <footer class="bg-white py-8 md:py-12 px-4 md:px-20 border-t">
-    <div class="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 md:gap-8">
+    <!-- <div class="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 md:gap-8">
       <div class="text-center md:text-left">
        
       </div>
@@ -782,7 +795,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
     <div
         class="mt-12 flex flex-col justify-center items-center h-[200px] bg-[url('./assets/image4.png')] bg-no-repeat bg-right-bottom bg-[length:150px_150px]">
         <!-- Social Icons -->
@@ -808,15 +821,23 @@
 <!-- Scripts for toggling mobile dropdowns -->
 <script>
     function toggleMobileMenu() {
-      const menu = document.getElementById('mobileMenu');
-      menu.classList.toggle('hidden');
+      const mobileMenu = document.getElementById('mobileMenu');
+      mobileMenu.classList.toggle('hidden');
     }
-  
-    function toggleSubMenu(subMenuId) {
-      const submenu = document.getElementById(subMenuId);
-      if (submenu) {
-        submenu.classList.toggle('hidden');
-      }
+    
+    function toggleSubMenu(id, event) {
+      event.preventDefault();
+      const subMenu = document.getElementById(id);
+      subMenu.classList.toggle('hidden');
+      
+      // Close other submenus
+      const allSubmenus = document.querySelectorAll('[id$="SubMenu"]');
+      allSubmenus.forEach(menu => {
+        if(menu.id !== id && !menu.classList.contains('hidden')) {
+          menu.classList.add('hidden');
+        }
+      });
     }
-  </script>
+    </script>
+    
   
