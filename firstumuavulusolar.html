@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>…United To Serve Others</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Ovo&display=swap');
+        @import "tailwindcss";
+
+        @font-face {
+            font-family: Oswald;
+            font-style: normal;
+            font-weight: 200 700;
+            font-display: swap;
+            src: url("/fonts/Oswald.woff2") format("woff2");
+        }
+
+        .bangers-font {
+            font-family: "Bangers", system-ui;
+        }
+
+        .carter-font {
+            font-family: "Carter One", cursive;
+        }
+
+        .ovo-font {
+            font-family: "Ovo", serif;
+        }
+
+        .open-sans {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            /* Replace <weight> with actual values like 300, 400, 600, etc. */
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+        }
+
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+
+
+<body class="bg-white text-gray-900">
+<!-- Navigation Bar -->
+<nav class="relative bg-[#CCEFFF] p-5 flex items-center justify-between z-50">
+    <!-- Logo -->
+    <div class="flex-shrink-0">
+      <img src="./assets/logo.png" alt="Team Meeting" class="h-[50px] object-contain">
+    </div>
+  
+    <!-- Desktop Navigation -->
+    <ul class="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 space-x-[40px] items-center">
+      <!-- Home -->
+      <li class="relative group">
+        <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Home</a>
+        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+          opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
+          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
+        </div>
+      </li>
+  
+      <!-- Services -->
+      <li class="relative group">
+        <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">Services</a>
+        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+          opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          
+          <!-- Projects Submenu -->
+          <div class="relative group/sub">
+            <a href="main.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Projects <span class="ml-2">›</span>
+            </a>
+            <div class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+              opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
+              <a href="medical.html" class="block px-4 py-2 hover:bg-gray-100">Medical & Agricultural support</a>
+                <a href="education.html" class="block px-4 py-2 hover:bg-gray-100">Solar energy</a>
+              <a href="secondumuavulu.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
+              <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
+              <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
+              <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
+              <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+              <a href="workdone.html" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
+              <a href="nomoney,html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+              <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
+              <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
+              <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+            </div>
+          </div>
+  
+          <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
+          <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
+        </div>
+      </li>
+  
+      <li>
+        <a href="about-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a>
+      </li>
+      <li>
+        <a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a>
+      </li>
+    </ul>
+  
+    <!-- Mobile Menu Trigger -->
+    <div class="md:hidden cursor-pointer text-3xl" onclick="toggleMobileMenu()">☰</div>
+  
+    <!-- Mobile Navigation -->
+    <ul id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white flex-col space-y-4 mt-2 p-4 shadow-lg z-50">
+      <!-- Home Mobile -->
+      <li class="relative">
+        <a href="#" onclick="toggleSubMenu('homeSubMenu', event)" class="ovo-font text-xl hover:text-blue-500 open-sans block">Home ▾</a>
+        <div id="homeSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+          <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
+          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
+        </div>
+      </li>
+  
+      <!-- Services Mobile -->
+      <li class="relative">
+        <a href="#" onclick="toggleSubMenu('servicesSubMenu', event)" class="ovo-font text-xl hover:text-blue-500 open-sans block">Services ▾</a>
+        <div id="servicesSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+          
+          <!-- Projects Mobile Submenu -->
+          <div class="relative">
+            <a href="#" onclick="toggleSubMenu('projectsSubMenuMobile', event)" 
+              class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Projects ▾
+            </a>
+            <div id="projectsSubMenuMobile" class="hidden ml-4 mt-2 bg-[#CCEFFF] rounded-md border border-gray-200">
+                <a href="medical.html" class="block px-4 py-2 hover:bg-gray-100">Medical & Agricultural support</a>
+                <a href="education.html" class="block px-4 py-2 hover:bg-gray-100">Solar energy</a>
+                <a href="secondumuavulu.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
+                <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
+                <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
+                <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
+                <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+                <a href="workdone.html" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
+                <a href="nomoney.html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+                <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
+                <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
+                <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+            </div>
+          </div>
+  
+          <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
+          <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
+        </div>
+      </li>
+  
+      <li>
+        <a href="about-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">About Us</a>
+      </li>
+      <li>
+        <a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+
+  
+  <!-- Main Content -->
+  <main class="px-4 py-16">
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-md border border-gray-200">
+      <h1 class="text-2xl md:text-3xl font-semibold text-center text-blue-500 mb-6">
+        First Umuavulu Solar Installation
+      </h1>
+      <p class="text-gray-800 leading-relaxed mb-4">
+        Conversations for the first family solar installation in Umuavulu began in mid-March 2020. Prior to the new installation, the only family that had solar at their home was the family of the ex-minister, Mrs. Akuabata Njeze. Hence, the solar power installation at Eziagu, Umuavulu is a major milestone.
+        Prior to the installation, the Community was embroiled in a protracted blackout imposed by EEDC or Enugu Electricity Distribution Company in response to nonpayment of estimated electricity bills.
+         With the Eziagu installation, the benefiting family traded blackouts for lights, only limited by the size of their storage battery and sunlight.
+      </p>
+      <p class="text-gray-800 leading-relaxed mb-4">
+        The customer needed a 1,200 Watts solar system priced at #200,000, but lacked sufficient money to implement it.  bmpUnited came with a solution. bmp financed 50% of the cost, while the customer paid the remaining 50% within four months.  The installation happened at Eziagu, Umuavulu-ABOR on March 31st, 2020, a date that must be remembered when the history of electricity is written at Umuavulu. 
+        With this installation, made possible by bmpUnited’s investment in the infrastructural development of a community, the community of Umuavulu took the first step to chip away at the monopoly of EEDC.
+      </p>
+      
+    </div>
+  </main>
+
+
+    <div
+    
+        class="flex flex-col justify-center items-center h-[200px] bg-[url('./assets/image4.png')] bg-no-repeat bg-right-bottom bg-[length:150px_150px]">
+        <!-- Social Icons -->
+        <div class="bottom-[-200px] flex flex-row space-x-4">
+            <img src="./assets/facebook.png" alt="Facebook" class="object-contain rounded-lg ">
+            <img src="./assets/in.png" alt="LinkedIn" class="object-contain rounded-lg ">
+            <img src="./assets/whatsapp.png" alt="WhatsApp" class="object-contain rounded-lg ">
+        </div>
+
+        <!-- Footer Section -->
+        <div class="flex items-center justify-center w-full p-4 
+            ">
+            <p class="text-center">
+                Copyright &copy; 2025 <span class="mx-2 open-sans">BmpUnited.</span> <span class="mx-2 open-sans">All
+                    rights
+                    reserved.</span> </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    function toggleMobileMenu() {
+      const mobileMenu = document.getElementById('mobileMenu');
+      mobileMenu.classList.toggle('hidden');
+    }
+    
+    function toggleSubMenu(id, event) {
+      event.preventDefault();
+      const subMenu = document.getElementById(id);
+      subMenu.classList.toggle('hidden');
+      
+      // Close other submenus
+      const allSubmenus = document.querySelectorAll('[id$="SubMenu"]');
+      allSubmenus.forEach(menu => {
+        if(menu.id !== id && !menu.classList.contains('hidden')) {
+          menu.classList.add('hidden');
+        }
+      });
+    }
+    </script>
+  
+  

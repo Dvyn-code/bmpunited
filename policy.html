@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>…United To Serve Others</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Ovo&display=swap');
+        @import "tailwindcss";
+
+        @font-face {
+            font-family: Oswald;
+            font-style: normal;
+            font-weight: 200 700;
+            font-display: swap;
+            src: url("/fonts/Oswald.woff2") format("woff2");
+        }
+
+        .bangers-font {
+            font-family: "Bangers", system-ui;
+        }
+
+        .carter-font {
+            font-family: "Carter One", cursive;
+        }
+
+        .ovo-font {
+            font-family: "Ovo", serif;
+        }
+
+        .open-sans {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            /* Replace <weight> with actual values like 300, 400, 600, etc. */
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+        }
+
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+
+
+<body class="bg-white text-gray-900">
+<!-- Navigation Bar -->
+<nav class="relative bg-[#CCEFFF] p-5 flex items-center justify-between z-50">
+    <!-- Logo -->
+    <div class="flex-shrink-0">
+      <img src="./assets/logo.png" alt="Team Meeting" class="h-[50px] object-contain">
+    </div>
+  
+    <!-- Desktop Navigation -->
+    <ul class="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 space-x-[40px] items-center">
+      <!-- Home -->
+      <li class="relative group">
+        <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Home</a>
+        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+          opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
+          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
+        </div>
+      </li>
+  
+      <!-- Services -->
+      <li class="relative group">
+        <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">Services</a>
+        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+          opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          
+          <!-- Projects Submenu -->
+          <div class="relative group/sub">
+            <a href="main.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Projects <span class="ml-2">›</span>
+            </a>
+            <div class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+              opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
+              <a href="medical.html" class="block px-4 py-2 hover:bg-gray-100">Medical & Agricultural support</a>
+                <a href="education.html" class="block px-4 py-2 hover:bg-gray-100">Solar energy</a>
+              <a href="secondumuavulu.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
+              <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
+              <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
+              <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
+              <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+              <a href="workdone.html" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
+              <a href="nomoney,html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+              <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
+              <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
+              <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+            </div>
+          </div>
+  
+          <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
+          <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
+        </div>
+      </li>
+  
+      <li>
+        <a href="about-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a>
+      </li>
+      <li>
+        <a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a>
+      </li>
+    </ul>
+  
+    <!-- Mobile Menu Trigger -->
+    <div class="md:hidden cursor-pointer text-3xl" onclick="toggleMobileMenu()">☰</div>
+  
+    <!-- Mobile Navigation -->
+    <ul id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white flex-col space-y-4 mt-2 p-4 shadow-lg z-50">
+      <!-- Home Mobile -->
+      <li class="relative">
+        <a href="#" onclick="toggleSubMenu('homeSubMenu', event)" class="ovo-font text-xl hover:text-blue-500 open-sans block">Home ▾</a>
+        <div id="homeSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+          <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
+          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
+        </div>
+      </li>
+  
+      <!-- Services Mobile -->
+      <li class="relative">
+        <a href="#" onclick="toggleSubMenu('servicesSubMenu', event)" class="ovo-font text-xl hover:text-blue-500 open-sans block">Services ▾</a>
+        <div id="servicesSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+          
+          <!-- Projects Mobile Submenu -->
+          <div class="relative">
+            <a href="#" onclick="toggleSubMenu('projectsSubMenuMobile', event)" 
+              class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Projects ▾
+            </a>
+            <div id="projectsSubMenuMobile" class="hidden ml-4 mt-2 bg-[#CCEFFF] rounded-md border border-gray-200">
+                <a href="medical.html" class="block px-4 py-2 hover:bg-gray-100">Medical & Agricultural support</a>
+                <a href="education.html" class="block px-4 py-2 hover:bg-gray-100">Solar energy</a>
+                <a href="secondumuavulu.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
+                <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
+                <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
+                <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
+                <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+                <a href="workdone.html" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
+                <a href="nomoney.html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+                <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
+                <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
+                <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+            </div>
+          </div>
+  
+          <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
+          <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
+        </div>
+      </li>
+  
+      <li>
+        <a href="about-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">About Us</a>
+      </li>
+      <li>
+        <a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+
+  
+   <!-- Policies Content -->
+   <main class="max-w-4xl mx-auto p-6 mt-10 bg-white rounded-xl shadow-md relative">
+    <h2 class="text-2xl font-bold text-center text-[#05668d] mb-8">BmpUnited Policies</h2>
+
+    <!-- Follow The Money Section -->
+    <section class="mb-12">
+      <h3 class="text-xl font-semibold text-[#05668d] mb-2">Follow The Money</h3>
+      <p class="text-gray-700 leading-relaxed">
+        Follow the money or FTM is a standard bmpUnited policy of sending money for products and services,
+        on behalf of beneficiaries, to the ultimate end-user or service provider. Most of the time the recipient 
+        of this money is not the same as the beneficiary. A simple example below explains how FTM works.<br><br>
+
+        Say bmpUnited has approved to pay school fees and purchase books for a student. Using the FTM method, 
+        the school fees is sent directly to the school bank account, while money for the books goes to the 
+        bank account of the Bookstore that supplied the books. No need for the student to touch the money. 
+        Sending the school fees to the student risks a chance that the money could be diverted to other equally 
+        important needs, but which are inconsistent with the original defined objective: to pay school fees and buy books.<br><br>
+
+        Beneficiaries ought to embrace the FTM method because it guarantees that objectives presented to bmpU are met. 
+        Although a few people may misconstrue the FTM method as a lack of trust, nothing could be farther from the truth. 
+        FTM guarantees that the job is done.
+      </p>
+    </section>
+
+    <!-- We Don't Give OPM Section -->
+    <section class="mb-12">
+      <h3 class="text-xl font-semibold text-[#05668d] mb-2 text-right">We Don’t Give OPM</h3>
+      <p class="text-gray-700 leading-relaxed">
+        As one looks for best ways to make a difference in other’s lives, a discussion of Other People’s Money or OPM is inevitable.
+        OPM happens when friends or relatives ask for a gift of cash, or loan to start a business. This kind of request would not
+        normally be successful at a bank because the banks need at least two things, may be more, to lend: a business registration 
+        with ACA, and a cash-flow history. The bank needs this information to establish that the requester is truly a business, 
+        and that the business will have cash to pay back when the time comes.<br><br>
+
+        OPM lenders lend differently, on the basis of friendships and family relationships, and promises. It is heartwarming that 
+        a survey found over 80% of people were willing to lend money to relatives in need. When asked if they would still make 
+        the same loan if they knew upfront the loan would not be paid back as promised, the percentage of respondents came down 
+        to 32%.<br><br>
+
+        bmpUnited will not make OPM loans, especially if they will not be paid back. This decision is consistent with 68% of 
+        the surveyed population. OPM loans are risky because the borrower very likely has insufficient experience handling the 
+        size of money borrowed, or running businesses for which the money was borrowed. Worse still, bmpUnited is unable to 
+        follow the money (FTM), and therefore cannot confirm the money is used as promised. Above all OPM loans are an obstacle 
+        to bmpUnited mission to serve the most people with limited resources.
+      </p>
+    </section>
+  </main>
+
+    <div
+    
+        class="flex flex-col justify-center items-center h-[200px] bg-[url('./assets/image4.png')] bg-no-repeat bg-right-bottom bg-[length:150px_150px]">
+        <!-- Social Icons -->
+        <div class="bottom-[-200px] flex flex-row space-x-4">
+            <img src="./assets/facebook.png" alt="Facebook" class="object-contain rounded-lg ">
+            <img src="./assets/in.png" alt="LinkedIn" class="object-contain rounded-lg ">
+            <img src="./assets/whatsapp.png" alt="WhatsApp" class="object-contain rounded-lg ">
+        </div>
+
+        <!-- Footer Section -->
+        <div class="flex items-center justify-center w-full p-4 
+            ">
+            <p class="text-center">
+                Copyright &copy; 2025 <span class="mx-2 open-sans">BmpUnited.</span> <span class="mx-2 open-sans">All
+                    rights
+                    reserved.</span> </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    function toggleMobileMenu() {
+      const mobileMenu = document.getElementById('mobileMenu');
+      mobileMenu.classList.toggle('hidden');
+    }
+    
+    function toggleSubMenu(id, event) {
+      event.preventDefault();
+      const subMenu = document.getElementById(id);
+      subMenu.classList.toggle('hidden');
+      
+      // Close other submenus
+      const allSubmenus = document.querySelectorAll('[id$="SubMenu"]');
+      allSubmenus.forEach(menu => {
+        if(menu.id !== id && !menu.classList.contains('hidden')) {
+          menu.classList.add('hidden');
+        }
+      });
+    }
+    </script>
+  
+  
