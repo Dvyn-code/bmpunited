@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Ovo&display=swap');
         @import "tailwindcss";
@@ -97,7 +98,7 @@
             <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
             <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
             <a href="workdone.html" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
-            <a href="nomoney,html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+            <a href="nomoney.html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
             <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
             <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
             <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
@@ -267,26 +268,23 @@
   }
   </script>
 
-<!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
-<script>
-  (function () {
-    emailjs.init("kXAz7s1DeJaVql84h"); // Your Public Key
-  })();
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+></script>
 
+<script type="text/javascript">
+  emailjs.init("kXAz7s1DeJaVql84h")
+</script>
+
+<script>
   function sendEmail(e) {
     e.preventDefault();
-
-    // const params = {
-    //   name: document.getElementById("name").value,
-    //   surname: document.getElementById("surname").value,
-    //   email: document.getElementById("email").value,
-    //   message: document.getElementById("message").value,
-    // };
     const params = {
-      name: 'delight',
-      surname: 'elisha',
-      email: 'elisha.delight5@gmail.com',
-      message: 'dguegduegue',
+      name: document.getElementById("name").value,
+      surname: document.getElementById("surname").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
     };
 
     emailjs.send("service_gjen1yj", "template_eosv0jj", params)
@@ -296,7 +294,7 @@
       })
       .catch((err) => {
         console.error("Error:", err);
-        alert(err);
+        alert("Failed to send message.");
       });
   }
 </script>
