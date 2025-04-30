@@ -263,11 +263,11 @@
     <div class="bg-white p-6 md:p-8 rounded-xl w-full max-w-xl mx-auto mt-12 shadow-md border border-gray-200">
         <h4 class="text-xl font-bold text-blue-500 mb-6 text-center md:text-left">Leave A Reply</h4>
         
-        <form class="space-y-6">
-          <input type="text" placeholder="Name*" class="w-full p-3 rounded-lg bg-blue-100 focus:outline-none">
-          <input type="email" placeholder="E-mail*" class="w-full p-3 rounded-lg bg-blue-100 focus:outline-none">
-          <input type="text" placeholder="Website" class="w-full p-3 rounded-lg bg-blue-100 focus:outline-none">
-          <textarea placeholder="Comment*" class="w-full p-3 rounded-lg bg-blue-100 h-32 focus:outline-none"></textarea>
+        <form id="contactForm" onsubmit="sendEmail(event)" class="space-y-6">
+          <input id="name" type="text" placeholder="Name*" class="w-full p-3 rounded-lg bg-blue-100 focus:outline-none">
+          <input id="surname" type="text" placeholder="Your Surname..." class="w-1/2 p-2 bg-blue-100 rounded">
+          <input id="email" type="email" placeholder="E-mail*" class="w-full p-3 rounded-lg bg-blue-100 focus:outline-none">
+          <textarea id="message" placeholder="Comment*" class="w-full p-3 rounded-lg bg-blue-100 h-32 focus:outline-none"></textarea>
           
           <div class="flex items-start space-x-2 text-sm">
             <input type="checkbox" id="saveInfo" class="w-4 h-4 mt-1">
@@ -334,4 +334,33 @@
     }
     </script>
   
-  
+  <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+></script>
+
+<script type="text/javascript">
+  emailjs.init("kXAz7s1DeJaVql84h")
+</script>
+
+<script>
+  function sendEmail(e) {
+    e.preventDefault();
+    const params = {
+      name: document.getElementById("name").value,
+      surname: document.getElementById("surname").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
+
+    emailjs.send("service_gjen1yj", "template_eosv0jj", params)
+      .then(() => {
+        alert("Message sent successfully! we'll get back to you as soon as possible.");
+        document.getElementById("contactForm").reset();
+      })
+      .catch((err) => {
+        console.error("Error:", err);
+        alert("Failed to send message.");
+      });
+  }
+</script>
