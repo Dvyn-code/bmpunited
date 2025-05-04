@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bmplUnited</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-700 font-sans">
+
+<!-- Navigation Bar -->
+<nav class="relative bg-[#CCEFFF] p-5 flex items-center justify-between z-50">
+    <!-- Logo -->
+    <div class="flex-shrink-0">
+      <img src="./assets/logo.png" alt="Team Meeting" class="h-[50px] object-contain">
+    </div>
+  
+    <!-- Desktop Navigation -->
+    <ul class="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 space-x-[40px] items-center">
+      <!-- Home -->
+      <li class="relative group">
+        <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Home</a>
+        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+          opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
+          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
+        </div>
+      </li>
+  
+      <!-- Services -->
+      <li class="relative group">
+        <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">Services</a>
+        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+          opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          
+          <!-- Projects Submenu -->
+          <div class="relative group/sub">
+            <a href="main.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Projects <span class="ml-2">›</span>
+            </a>
+            <div class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+              opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
+              <a href="medical.html" class="block px-4 py-2 hover:bg-gray-100">Medical & Agricultural support</a>
+                <a href="education.html" class="block px-4 py-2 hover:bg-gray-100">Solar energy</a>
+              <a href="secondumuavulu.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
+              <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
+              <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
+              <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
+              <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+              <a href="workdone.html" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
+              <a href="nomoney.html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+              <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
+              <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
+              <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+            </div>
+          </div>
+  
+          <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
+          <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
+        </div>
+      </li>
+  
+      <li>
+        <a href="about-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a>
+      </li>
+      <li>
+        <a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a>
+      </li>
+    </ul>
+  
+    <!-- Mobile Menu Trigger -->
+    <div class="md:hidden cursor-pointer text-3xl" onclick="toggleMobileMenu()">☰</div>
+  
+    <!-- Mobile Navigation -->
+    <ul id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white flex-col space-y-4 mt-2 p-4 shadow-lg z-50">
+      <!-- Home Mobile -->
+      <li class="relative">
+        <a href="#" onclick="toggleSubMenu('homeSubMenu', event)" class="ovo-font text-xl hover:text-blue-500 open-sans block">Home ▾</a>
+        <div id="homeSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+          <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
+          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
+        </div>
+      </li>
+  
+      <!-- Services Mobile -->
+      <li class="relative">
+        <a href="#" onclick="toggleSubMenu('servicesSubMenu', event)" class="ovo-font text-xl hover:text-blue-500 open-sans block">Services ▾</a>
+        <div id="servicesSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+          
+          <!-- Projects Mobile Submenu -->
+          <div class="relative">
+            <a href="#" onclick="toggleSubMenu('projectsSubMenuMobile', event)" 
+              class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Projects ▾
+            </a>
+            <div id="projectsSubMenuMobile" class="hidden ml-4 mt-2 bg-[#CCEFFF] rounded-md border border-gray-200">
+                <a href="medical.html" class="block px-4 py-2 hover:bg-gray-100">Medical & Agricultural support</a>
+                <a href="education.html" class="block px-4 py-2 hover:bg-gray-100">Solar energy</a>
+                <a href="secondumuavulu.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
+                <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
+                <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
+                <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
+                <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+                <a href="workdone.html" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
+                <a href="nomoney.html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+                <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
+                <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
+                <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+            </div>
+          </div>
+  
+          <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
+          <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
+        </div>
+      </li>
+  
+      <li>
+        <a href="about-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">About Us</a>
+      </li>
+      <li>
+        <a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Content Container -->
+  <main class="max-w-5xl mx-auto px-4 py-10 space-y-16">
+    
+    <!-- Section 1: RAMK -->
+    <section class="bg-white rounded-lg shadow-md p-6 border">
+      <h2 class="text-xl md:text-2xl font-semibold text-cyan-600 mb-4 text-center">Random Acts of Mercy & Kindness</h2>
+      <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+        To illustrate the importance of Random Acts Of Mercy and Kindness or RAMK, bmplUnited borrows from the parable of the lost sheep in Matthew Chapter 18, verses 10–14. When things are going well for us, we forget that not everyone has been blessed with the same level and quantity of opportunities as we have. More importantly, when people are not engaged or contributing to the growth of the Community, it is critical to seek them out and lend a helping hand. When everyone is engaged and participating, everyone wins. We must find and engage the lost sheep. The world needs them as much as they need the world.
+      </p>
+    </section>
+
+    <!-- Section 2: COVID-19 Rescue -->
+    <section class="bg-white rounded-lg shadow-md p-6 border">
+      <h2 class="text-xl md:text-2xl font-semibold text-cyan-600 mb-4">COVID-19 Rescue</h2>
+      <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+        The bmplUnited COVID-19 Assistance Program, BCAP, also called bmplUnited COVID-19 Palliative Care, was scheduled to start on July 1, 2020. But the suffering facing the population that bmplUnited served became unbearable. It was the increased suffering that created a sense of urgency to start the project ten days earlier than planned. BCAP began on June 20, 2020, serving the first beneficiary at 15:36:00 PM (or Nigerian Time). The process of making a difference required speed and preparation, as BCAP was specific in how the bmplUnited cared, and its execution and planning made the difference. BCAP was only designed to make a difference, as indeed are all community programs managed by bmplUnited nonprofit company. We realized that not all the aid from Melinda Gates Foundations and similar organizations could reach the largest people faced. That was why the scope of our assistance was narrow and targeted.
+        <br><br>
+        BCAP was a one time financial assistance to individuals and all members of a family with a cap for each person and for each family. The financial assistance was distributed not unlike the stimulus package in the United States whereby the government deposited a given sum of money in the bank accounts of citizens. For those who did not have their bank accounts, a BCAP or bmplUnited COVID-19 Assistance Program Distributor was appointed. To ensure that the BCAPD did their job properly, the proposed recipient was required to send a confirmation message through bmplUnited website, Facebook or WhatsApp account. bmplUnited started the assistance campaign with an initial sizable budget. The budget determined how many people could be served. By the time the campaign was over bmplUnited had served over two hundred individuals and families and deposited 2.2 million Naira into bank accounts.
+      </p>
+    </section>
+
+  </main>
+
+ <!-- Footer -->
+ <footer class="bg-white py-8 md:py-12 px-4 md:px-20 border-t">
+    <!-- <div class="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 md:gap-8">
+      <div class="text-center md:text-left">
+       
+      </div>
+      <div class="flex flex-col md:flex-row gap-6 md:gap-12 text-sm"">
+        <img src="./assets/logo.png" alt="Logo" class="w-[60px] h-[60px] mb-2">
+        <p class="text-xl text-gray-600 max-w-md lato-light">bmpUnited supports this growth through healthcare, education, agriculture, and solar energy, empowering people and driving sustainable change. By addressing critical needs and nurturing potential, we create lasting impact and stronger communities.</p>
+        <div>
+          <h4 class="font-semibold mb-2 text-4xl lato-bold">Home</h4>
+          <ul>
+            <li><a class="text-xl" href="#services lato-bold">Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2 text-4xl lato-bold">About Us</h4>
+          <ul>
+            <li><a class="text-xl" href="#contact lato-bold">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+    <div
+      class="mt-12 flex flex-col justify-center items-center h-[200px] bg-[url('./assets/image4.png')] bg-no-repeat bg-right-bottom bg-[length:150px_150px]">
+      <!-- Social Icons -->
+      <div class="bottom-[-200px] flex flex-row space-x-4">
+        <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/facebook.png" alt="Facebook" class="object-contain rounded-lg">
+        </a>
+
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/in.png" alt="LinkedIn" class="object-contain rounded-lg">
+        </a>
+
+        <a href="https://wa.me/18583370785?text=Hello%20BmpUnited%2C%20I%20need%20assistance" target="_blank"
+          rel="noopener noreferrer">
+          <img src="./assets/whatsapp.png" alt="WhatsApp" class="object-contain rounded-lg w-6 h-6">
+        </a>
+      </div>
+
+
+      <!-- Footer Section -->
+      <div class="flex items-center justify-center w-full p-4 
+            ">
+        <p class="text-center lato-bold">
+          Copyright &copy; 2025 <span class="mx-2 open-sans lato-bold">BmpUnited.</span> <span
+            class="mx-2 open-sans lato-bold">All
+            rights
+            reserved.</span> </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+<script>
+    function toggleMobileMenu() {
+      const mobileMenu = document.getElementById('mobileMenu');
+      mobileMenu.classList.toggle('hidden');
+    }
+    
+    function toggleSubMenu(id, event) {
+      event.preventDefault();
+      const subMenu = document.getElementById(id);
+      subMenu.classList.toggle('hidden');
+      
+      // Close other submenus
+      const allSubmenus = document.querySelectorAll('[id$="SubMenu"]');
+      allSubmenus.forEach(menu => {
+        if(menu.id !== id && !menu.classList.contains('hidden')) {
+          menu.classList.add('hidden');
+        }
+      });
+    }
+    </script>
+  
+  
