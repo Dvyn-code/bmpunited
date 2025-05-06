@@ -2,150 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>…United To Serve Others</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>…United To Serve Others</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Ovo&display=swap');
-        @import "tailwindcss";
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Ovo&display=swap');
+    @import "tailwindcss";
 
-        @font-face {
-            font-family: Oswald;
-            font-style: normal;
-            font-weight: 200 700;
-            font-display: swap;
-            src: url("/fonts/Oswald.woff2") format("woff2");
-        }
+    @font-face {
+      font-family: Oswald;
+      font-style: normal;
+      font-weight: 200 700;
+      font-display: swap;
+      src: url("/fonts/Oswald.woff2") format("woff2");
+    }
 
-        .bangers-font {
-            font-family: "Bangers", system-ui;
-        }
+    .bangers-font {
+      font-family: "Bangers", system-ui;
+    }
 
-        .carter-font {
-            font-family: "Carter One", cursive;
-        }
+    .carter-font {
+      font-family: "Carter One", cursive;
+    }
 
-        .ovo-font {
-            font-family: "Ovo", serif;
-        }
+    .ovo-font {
+      font-family: "Ovo", serif;
+    }
 
-        .open-sans {
-            font-family: "Open Sans", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            /* Replace <weight> with actual values like 300, 400, 600, etc. */
-            font-style: normal;
-            font-variation-settings: "wdth" 100;
-        }
+    .open-sans {
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      /* Replace <weight> with actual values like 300, 400, 600, etc. */
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
 
 
-        .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-        }
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
 
-        .scrollbar-hide {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
 </head>
 
 
 
 <body class="bg-white text-gray-900">
-<!-- Navigation Bar -->
-<nav class="relative bg-[#CCEFFF] p-5 flex items-center justify-between z-50">
-  <!-- Logo -->
-  <div class="flex-shrink-0">
-    <img src="./assets/logo.png" alt="Team Meeting" class="h-[50px] object-contain">
-  </div>
+  <!-- Navigation Bar -->
+  <nav class="relative bg-[#CCEFFF] p-5 flex items-center justify-between z-50">
+    <!-- Logo -->
+    <div class="flex-shrink-0">
+      <img src="./assets/logo.png" alt="Team Meeting" class="h-[50px] object-contain">
+    </div>
 
-  <!-- Desktop Navigation -->
-  <ul class="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 space-x-[40px] items-center">
-    <!-- Home -->
-    <li class="relative group">
-      <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Home</a>
-      <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+    <!-- Desktop Navigation -->
+    <ul
+      class="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 space-x-[40px] items-center">
+      <!-- Home -->
+      <li class="relative group">
+        <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Home</a>
+        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
         opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-        <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
-        <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
-      </div>
-    </li>
-
-    <!-- Services -->
-    <li class="relative group">
-      <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">Services</a>
-      <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
-        opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-        
-        <!-- Projects Submenu -->
-        <div class="relative group/sub">
-          <a href="main.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
-            Projects <span class="ml-2">›</span>
-          </a>
-          <div class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
-            opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
-            <a href="medical.html" class="block px-4 py-2 hover:bg-gray-100">Medical & Agricultural support</a>
-              <a href="education.html" class="block px-4 py-2 hover:bg-gray-100">Solar energy</a>
-            <a href="secondumuavulu.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
-            <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
-            <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
-            <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
-            <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
-            <a href="workdone.html" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
-            <a href="nomoney.html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
-            <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
-            <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
-            <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
-          </div>
+          <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
+          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
         </div>
+      </li>
 
-        <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
-        <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
-      </div>
-    </li>
+      <!-- Services -->
+      <li class="relative group">
+        <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">Services</a>
+        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+        opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
 
-    <li>
-      <a href="about-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a>
-    </li>
-    <li>
-      <a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a>
-    </li>
-  </ul>
-
-  <!-- Mobile Menu Trigger -->
-  <div class="md:hidden cursor-pointer text-3xl" onclick="toggleMobileMenu()">☰</div>
-
-  <!-- Mobile Navigation -->
-  <ul id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white flex-col space-y-4 mt-2 p-4 shadow-lg z-50">
-    <!-- Home Mobile -->
-    <li class="relative">
-      <a href="#" onclick="toggleSubMenu('homeSubMenu', event)" class="ovo-font text-xl hover:text-blue-500 open-sans block">Home ▾</a>
-      <div id="homeSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
-        <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
-        <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
-      </div>
-    </li>
-
-    <!-- Services Mobile -->
-    <li class="relative">
-      <a href="#" onclick="toggleSubMenu('servicesSubMenu', event)" class="ovo-font text-xl hover:text-blue-500 open-sans block">Services ▾</a>
-      <div id="servicesSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
-        
-        <!-- Projects Mobile Submenu -->
-        <div class="relative">
-          <a href="#" onclick="toggleSubMenu('projectsSubMenuMobile', event)" 
-            class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
-            Projects ▾
-          </a>
-          <div id="projectsSubMenuMobile" class="hidden ml-4 mt-2 bg-[#CCEFFF] rounded-md border border-gray-200">
+          <!-- Projects Submenu -->
+          <div class="relative group/sub">
+            <a href="main.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Projects <span class="ml-2">›</span>
+            </a>
+            <div class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+            opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
               <a href="medical.html" class="block px-4 py-2 hover:bg-gray-100">Medical & Agricultural support</a>
               <a href="education.html" class="block px-4 py-2 hover:bg-gray-100">Solar energy</a>
               <a href="secondumuavulu.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
-              <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
+              <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home
+                Solar</a>
               <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
               <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
               <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
@@ -154,159 +102,204 @@
               <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
               <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
               <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+            </div>
+          </div>
+
+          <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
+          <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
+        </div>
+      </li>
+
+      <li>
+        <a href="about-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a>
+      </li>
+      <li>
+        <a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a>
+      </li>
+    </ul>
+
+    <!-- Mobile Menu Trigger -->
+    <div class="md:hidden cursor-pointer text-3xl" onclick="toggleMobileMenu()">☰</div>
+
+    <!-- Mobile Navigation -->
+    <ul id="mobileMenu"
+      class="hidden absolute top-full left-0 w-full bg-white flex-col space-y-4 mt-2 p-4 shadow-lg z-50">
+      <!-- Home Mobile -->
+      <li class="relative">
+        <a href="#" onclick="toggleSubMenu('homeSubMenu', event)"
+          class="ovo-font text-xl hover:text-blue-500 open-sans block">Home ▾</a>
+        <div id="homeSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+          <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
+          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
+        </div>
+      </li>
+
+      <!-- Services Mobile -->
+      <li class="relative">
+        <a href="#" onclick="toggleSubMenu('servicesSubMenu', event)"
+          class="ovo-font text-xl hover:text-blue-500 open-sans block">Services ▾</a>
+        <div id="servicesSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+
+          <!-- Projects Mobile Submenu -->
+          <div class="relative">
+            <a href="#" onclick="toggleSubMenu('projectsSubMenuMobile', event)"
+              class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Projects ▾
+            </a>
+            <div id="projectsSubMenuMobile" class="hidden ml-4 mt-2 bg-[#CCEFFF] rounded-md border border-gray-200">
+              <a href="medical.html" class="block px-4 py-2 hover:bg-gray-100">Medical & Agricultural support</a>
+              <a href="education.html" class="block px-4 py-2 hover:bg-gray-100">Solar energy</a>
+              <a href="secondumuavulu.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
+              <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home
+                Solar</a>
+              <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
+              <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
+              <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+              <a href="workdone.html" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
+              <a href="nomoney.html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+              <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
+              <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
+              <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+            </div>
+          </div>
+
+          <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
+          <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
+        </div>
+      </li>
+
+      <li>
+        <a href="about-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">About Us</a>
+      </li>
+      <li>
+        <a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+
+  <!-- Contact Us Section -->
+  <div class="mt-10 bg-[url('./assets/image5.png')] bg-no-repeat">
+    <!-- Blog Section -->
+    <section class="py-16 bg-white">
+
+      <!-- Blog Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-blue-500">Blog</h2>
+      </div>
+
+      <!-- Blog Content Container -->
+      <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-md p-8 border border-gray-200">
+
+        <!-- First Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+
+          <!-- Image -->
+          <div>
+            <img src="./assets/frn.png" alt="CAC Approval" class="rounded-md shadow-md w-full">
+          </div>
+
+          <!-- Text -->
+          <div>
+            <h3 class="text-2xl font-bold text-blue-500 mb-4 ovo-font">Who Is Wawasa?</h3>
+            <p class="text-gray-700 mb-4 open-sans">
+              WAWASA or Wawa Solar Ambassadors Enterprises is a registered (CRBN1137976) solar installation firm that
+              specializes in solar energy education, marketing, installation and maintenance services for the benefit of
+              the community in which it resides.
+            </p>
+            <p class="text-gray-700 open-sans">
+              WAWASA’s mission is to provide renewable energy sources as a competitive supplement to power provided to
+              the community from other sources, such as Enugu Electric Distribution Company (EEDC) and portable gas
+              generators.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Second Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+
+          <!-- Text -->
+          <div class="order-2 md:order-1">
+            <p class="text-gray-700 mb-4 open-sans">
+              WAWASA is dedicated to replacing community blackouts with reliable electricity supply, only limited by the
+              customer's ability to afford the services.
+            </p>
+            <p class="text-gray-700 open-sans">
+              By focusing on its mission, WAWASA provides an alternative to the blackout experienced by EEDC customers
+              and the pollution and noise produced by most portable generators. WAWASA is an independent company used by
+              bmpUnited for solar projects.
+            </p>
+            <p class="text-gray-700 mt-4 open-sans">
+              Whenever feasible, bmpUnited, WAWASA and customers within the community enter into tripartite loan
+              agreements to make solar systems more affordable.
+            </p>
+          </div>
+
+          <!-- Image -->
+          <div class="order-1 md:order-2">
+            <img src="./assets/solarp.png" alt="Solar Team" class="rounded-md shadow-md h-[450px] w-[350px]">
+          </div>
+
+        </div>
+
+        <!-- Third Section -->
+        <div class="mb-12">
+          <div class="text-center">
+            <h3 class="text-2xl font-bold text-blue-500 mb-24 text-left ovo-font">Making a case for solar</h3>
+
+            <p class="text-gray-700 max-w-3xl mx-auto mb-6 open-sans">
+              Many still see solar energy as far away from their homes and businesses as the Sun that produces it. That
+              needs to change.
+              The attached essay attempts to shed some light on the concept of solar energy to help everyone, especially
+              in Africa, to find ways to make friends with the sun.
+              The obstacle that prevents this friendship from occurring and blossoming is economic. A change in
+              government policies all across Africa is urgently needed to minimize, and even eradicate the obstacle.
+            </p>
+
+            <p class="font-bold text-gray-800 mb-6 open-sans">
+              Please read the essay and leave your comments.
+            </p>
+
+            <a href="./assets/A-Compelling-Case-for-Solar-Energy.pdf" target="_blank"
+              class="open-sans inline-block bg-[#10B3FD] hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg">
+              Click Here To Read The Essay
+            </a>
+
+
           </div>
         </div>
 
-        <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
-        <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
+
+
       </div>
-    </li>
+    </section>
 
-    <li>
-      <a href="about-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">About Us</a>
-    </li>
-    <li>
-      <a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">Contact Us</a>
-    </li>
-  </ul>
-</nav>
+  </div>
 
-  
-
-
-    <!-- Contact Us Section -->
-    <div class="mt-10 bg-[url('./assets/image5.png')] bg-no-repeat">
-      <!-- Blog Section -->
-<section class="py-16 bg-white">
-
-    <!-- Blog Header -->
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold text-blue-500">Blog</h2>
-    </div>
-  
-    <!-- Blog Content Container -->
-    <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-md p-8 border border-gray-200">
-  
-      <!-- First Section -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
-        
-        <!-- Image -->
-        <div>
-          <img src="./assets/frn.png" alt="CAC Approval" class="rounded-md shadow-md w-full">
-        </div>
-  
-        <!-- Text -->
-        <div>
-          <h3 class="text-2xl font-bold text-blue-500 mb-4 ovo-font">Who Is Wawasa?</h3>
-          <p class="text-gray-700 mb-4 open-sans">
-            WAWASA or Wawa Solar Ambassadors Enterprises is a registered (CRBN1137976) solar installation firm that specializes in solar energy education, marketing, installation and maintenance services for the benefit of the community in which it resides. 
-          </p>
-          <p class="text-gray-700 open-sans">
-            WAWASA’s mission is to provide renewable energy sources as a competitive supplement to power provided to the community from other sources, such as Enugu Electric Distribution Company (EEDC) and portable gas generators.
-          </p>
-        </div>
-  
-      </div>
-  
-      <!-- Second Section -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
-        
-        <!-- Text -->
-        <div class="order-2 md:order-1">
-          <p class="text-gray-700 mb-4 open-sans">
-            WAWASA is dedicated to replacing community blackouts with reliable electricity supply, only limited by the customer's ability to afford the services.
-          </p>
-          <p class="text-gray-700 open-sans">
-            By focusing on its mission, WAWASA provides an alternative to the blackout experienced by EEDC customers and the pollution and noise produced by most portable generators. WAWASA is an independent company used by bmpUnited for solar projects.
-          </p>
-          <p class="text-gray-700 mt-4 open-sans">
-            Whenever feasible, bmpUnited, WAWASA and customers within the community enter into tripartite loan agreements to make solar systems more affordable.
-          </p>
-        </div>
-  
-        <!-- Image -->
-        <div class="order-1 md:order-2">
-          <img src="./assets/solarp.png" alt="Solar Team" class="rounded-md shadow-md h-[450px] w-[350px]">
-        </div>
-  
-      </div>
-  
-      <!-- Third Section -->
-      <div class="mb-12">
-        <div class="text-center">
-          <h3 class="text-2xl font-bold text-blue-500 mb-24 text-left ovo-font">Making a case for solar</h3>
-          
-          <p class="text-gray-700 max-w-3xl mx-auto mb-6 open-sans">
-            Many still see solar energy as far away from their homes and businesses as the Sun that produces it. That needs to change.
-            The attached essay attempts to shed some light on the concept of solar energy to help everyone, especially in Africa, to find ways to make friends with the sun.
-            The obstacle that prevents this friendship from occurring and blossoming is economic. A change in government policies all across Africa is urgently needed to minimize, and even eradicate the obstacle.
-          </p>
-      
-          <p class="font-bold text-gray-800 mb-6 open-sans">
-            Please read the essay and leave your comments.
-          </p>
-      
-          <a href="./assets/A-Compelling-Case-for-Solar-Energy.pdf" target="_blank"
-          class="open-sans inline-block bg-[#10B3FD] hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg">
-         Click Here To Read The Essay
-       </a>
-       
-       
-        </div>
-      </div>
-      
-  
-      
+  <div
+    class="flex flex-col justify-center items-center h-[200px] bg-[url('./assets/image4.png')] bg-no-repeat bg-right-bottom bg-[length:150px_150px]">
+    <!-- Social Icons -->
+    <div class="bottom-[-200px] flex flex-row space-x-4">
+      <img src="./assets/facebook.png" alt="Facebook" class="object-contain rounded-lg ">
+      <img src="./assets/in.png" alt="LinkedIn" class="object-contain rounded-lg ">
+      <a href="https://wa.me/18583370785?text=Hello%20BmpUnited%2C%20I%20need%20assistance" target="_blank"
+        rel="noopener noreferrer">
+        <img src="./assets/whatsapp.png" alt="WhatsApp" class="object-contain rounded-lg w-6 h-6">
+      </a>
     </div>
 
-    <!-- Comment Form -->
-    <div class="bg-white p-6 md:p-8 rounded-xl w-full max-w-xl mx-auto mt-12 shadow-md border border-gray-200">
-        <h4 class="text-xl font-bold text-blue-500 mb-6 text-center md:text-left">Leave A Reply</h4>
-        
-        <form id="contactForm" onsubmit="sendEmail(event)" class="space-y-6">
-          <input id="name" type="text" placeholder="Name*" class="w-full p-3 rounded-lg bg-blue-100 focus:outline-none">
-          <input id="surname" type="text" placeholder="Your Surname..." class="w-1/2 p-2 bg-blue-100 rounded">
-          <input id="email" type="email" placeholder="E-mail*" class="w-full p-3 rounded-lg bg-blue-100 focus:outline-none">
-          <textarea id="message" placeholder="Comment*" class="w-full p-3 rounded-lg bg-blue-100 h-32 focus:outline-none"></textarea>
-          
-          <div class="flex items-start space-x-2 text-sm">
-            <input type="checkbox" id="saveInfo" class="w-4 h-4 mt-1">
-            <label for="saveInfo" class="text-gray-700">Save my name, email, and website in this browser for next time I comment.</label>
-          </div>
-      
-          <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-bold">
-            Send Message Now
-          </button>
-        </form>
-      </div>
-      
-  
-  
-  </section>
-  
-    </div>
-
-    <div
-    
-        class="flex flex-col justify-center items-center h-[200px] bg-[url('./assets/image4.png')] bg-no-repeat bg-right-bottom bg-[length:150px_150px]">
-        <!-- Social Icons -->
-        <div class="bottom-[-200px] flex flex-row space-x-4">
-            <img src="./assets/facebook.png" alt="Facebook" class="object-contain rounded-lg ">
-            <img src="./assets/in.png" alt="LinkedIn" class="object-contain rounded-lg ">
-             <a href="https://wa.me/18583370785?text=Hello%20BmpUnited%2C%20I%20need%20assistance" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/whatsapp.png" alt="WhatsApp" class="object-contain rounded-lg w-6 h-6">
-          </a>
-        </div>
-
-        <!-- Footer Section -->
-        <div class="flex items-center justify-center w-full p-4 
+    <!-- Footer Section -->
+    <div class="flex items-center justify-center w-full p-4 
             ">
-            <p class="text-center">
-                Copyright &copy; 2025 <span class="mx-2 open-sans">bmpUnited.</span> <span class="mx-2 open-sans">All
-                    rights
-                    reserved.</span> </p>
-        </div>
+      <p class="text-center">
+        Copyright &copy; 2025 <span class="mx-2 open-sans">bmpUnited.</span> <span class="mx-2 open-sans">All
+          rights
+          reserved.</span> </p>
     </div>
+  </div>
 
 
 </body>
@@ -314,53 +307,22 @@
 </html>
 
 <script>
-    function toggleMobileMenu() {
-      const mobileMenu = document.getElementById('mobileMenu');
-      mobileMenu.classList.toggle('hidden');
-    }
-    
-    function toggleSubMenu(id, event) {
-      event.preventDefault();
-      const subMenu = document.getElementById(id);
-      subMenu.classList.toggle('hidden');
-      
-      // Close other submenus
-      const allSubmenus = document.querySelectorAll('[id$="SubMenu"]');
-      allSubmenus.forEach(menu => {
-        if(menu.id !== id && !menu.classList.contains('hidden')) {
-          menu.classList.add('hidden');
-        }
-      });
-    }
-    </script>
-  
-  <script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-></script>
+  function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenu.classList.toggle('hidden');
+  }
 
-<script type="text/javascript">
-  emailjs.init("kXAz7s1DeJaVql84h")
-</script>
+  function toggleSubMenu(id, event) {
+    event.preventDefault();
+    const subMenu = document.getElementById(id);
+    subMenu.classList.toggle('hidden');
 
-<script>
-  function sendEmail(e) {
-    e.preventDefault();
-    const params = {
-      name: document.getElementById("name").value,
-      surname: document.getElementById("surname").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value,
-    };
-
-    emailjs.send("service_gjen1yj", "template_eosv0jj", params)
-      .then(() => {
-        alert("Message sent successfully! we'll get back to you as soon as possible.");
-        document.getElementById("contactForm").reset();
-      })
-      .catch((err) => {
-        console.error("Error:", err);
-        alert("Failed to send message.");
-      });
+    // Close other submenus
+    const allSubmenus = document.querySelectorAll('[id$="SubMenu"]');
+    allSubmenus.forEach(menu => {
+      if (menu.id !== id && !menu.classList.contains('hidden')) {
+        menu.classList.add('hidden');
+      }
+    });
   }
 </script>

@@ -230,34 +230,11 @@
       <div class="flex flex-col items-center">
         <!-- Image -->
         <div class="order-1 md:order-2">
-          <img src="./assets/jj.png" alt="Solar Team" class="rounded-md shadow-md h-[350px] w-[350px]">
+          <img src="./assets/jj.png" alt="Solar Team" class="rounded-md shadow-md w-full">
         </div>
       </div>
     </section>
 
-    <!-- Leave A Reply Form -->
-    <section class="bg-white p-8 rounded-2xl shadow-md border border-gray-200 mb-20 max-w-2xl mx-auto">
-      <h4 class="text-xl font-bold text-blue-500 mb-6 text-center">Leave A Reply</h4>
-      <form id="contactForm" onsubmit="sendEmail(event)" class="space-y-6">
-        <input id="name" type="text" placeholder="Name*" class="w-full p-3 rounded-lg bg-blue-100 focus:outline-none">
-        <input id="surname" type="text" placeholder="Surname*"
-          class="w-full p-3 rounded-lg bg-blue-100 focus:outline-none">
-        <input id="email" type="email" placeholder="E-mail*"
-          class="w-full p-3 rounded-lg bg-blue-100 focus:outline-none">
-        <textarea id="message" placeholder="Comment*"
-          class="w-full p-3 rounded-lg bg-blue-100 h-32 focus:outline-none"></textarea>
-
-        <div class="flex items-start space-x-2 text-sm">
-          <input type="checkbox" id="saveInfo" class="w-4 h-4 mt-1">
-          <label for="saveInfo" class="text-gray-700">Save my name, email, and website in this browser for next time I
-            comment.</label>
-        </div>
-
-        <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-bold">
-          Send Message Now
-        </button>
-      </form>
-    </section>
 
   </main>
 
@@ -313,32 +290,3 @@
       }
     });
   }
-</script>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<script type="text/javascript">
-  emailjs.init("kXAz7s1DeJaVql84h")
-</script>
-
-<script>
-  function sendEmail(e) {
-    e.preventDefault();
-    const params = {
-      name: document.getElementById("name").value,
-      surname: document.getElementById("surname").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value,
-    };
-
-    emailjs.send("service_gjen1yj", "template_eosv0jj", params)
-      .then(() => {
-        alert("Message sent successfully! we'll get back to you as soon as possible.");
-        document.getElementById("contactForm").reset();
-      })
-      .catch((err) => {
-        console.error("Error:", err);
-        alert("Failed to send message.");
-      });
-  }
-</script>
