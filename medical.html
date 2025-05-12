@@ -187,18 +187,18 @@
     <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-md p-8 border border-gray-200">
   
       <!-- First Section -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-32">
         
         <!-- Image -->
-        <div>
-          <img src="./assets/wash.png" alt="CAC Approval" class="rounded-md shadow-md h-[350px] w-[350px]">
+        <div id="slider" class="rounded-md shadow-md h-[350px] w-[530px] overflow-hidden">
+          <img id="slideImage" src="./assets/wash.png" alt="CAC Approval" class="h-full w-full object-cover rounded-md">
         </div>
   
         <!-- Text -->
         <div>
           <h3 class="text-2xl font-bold text-blue-500 mb-4 ovo-font">Medical Advocacy & Support</h3>
           <p class="text-gray-700 mb-4 open-sans">
-            With health Care advocacy, bmpUnited ensures at-risk populations receive proper health monitoring and intervention before illnesses become severe. 
+            <span class="text-teal-500 text-6xl mb-12">W</span>ith health Care advocacy, bmpUnited ensures at-risk populations receive proper health monitoring and intervention before illnesses become severe. 
             We work with registered nurses, doctors, and pharmacists to provide necessary medical care and ensure timely treatment for those in need.
           </p>
           <!-- <p class="text-gray-700 open-sans">
@@ -215,15 +215,15 @@
         <div class="order-2 md:order-1">
             <h3 class="text-2xl font-bold text-blue-500 mb-4 ovo-font">Agricultural Loans & Grants</h3>
           <p class="text-gray-700 mb-4 open-sans">
-            We support local farmers by providing agricultural loans and grants to sustain farming initiatives. 
+            <span class="text-teal-500 text-6xl mb-12">W</span>e support local farmers by providing agricultural loans and grants to sustain farming initiatives. 
             Our efforts include funding pig farms, cassava farms, and seed yam purchases to promote food security and community self-sufficiency.
           </p>
         </div>
   
         <!-- Image -->
-        <div class="order-1 md:order-2">
-          <img src="./assets/grass.png" alt="Solar Team" class="rounded-md shadow-md h-[300px] w-[350px]">
-        </div>
+        <div id="slider" class="order-1 md:order-2">
+            <img id="slideImageTwo" src="./assets/grass.png" alt="Solar Team" class="rounded-md shadow-md h-[300px] w-[550px]">
+          </div>
   
       </div>   
   
@@ -305,4 +305,35 @@
     }
     </script>
   
+  <script>
+    const imagesOne = [
+      './assets/wash.png',
+      './assets/wash2.jpg' // Replace with your image paths
+      // './assets/image3.png'
+    ];
+
+    const imagesTwo = [
+      './assets/grass.png',
+      './assets/grass2.jpg', // Replace with your image paths
+      './assets/grass3.jpg',
+      './assets/grass4.jpeg',
+       './assets/grass5.jpg',
+      './assets/grass6.jpg',
+      // './assets/grass7.jpg',
+      // './assets/grass8.jpeg',
+      // './assets/image3.png'
+    ];
   
+    let index = 0;
+    let indexx = 0;
+    const slideImage = document.getElementById('slideImage');
+    const slideImageTwo = document.getElementById('slideImageTwo');
+  
+    setInterval(() => {
+      index = (index + 1) % imagesOne.length;
+      slideImage.src = imagesOne[index];
+
+      indexx = (indexx + 1) % imagesTwo.length;
+      slideImageTwo.src = imagesTwo[indexx];
+    }, 3000);
+  </script>
