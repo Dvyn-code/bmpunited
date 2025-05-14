@@ -2,389 +2,565 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>…United To Serve Others</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>…United To Serve Others</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Ovo&display=swap');
-        @import "tailwindcss";
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Ovo&display=swap');
+    @import "tailwindcss";
 
-        @font-face {
-            font-family: Oswald;
-            font-style: normal;
-            font-weight: 200 700;
-            font-display: swap;
-            src: url("/fonts/Oswald.woff2") format("woff2");
-        }
+    @font-face {
+      font-family: Oswald;
+      font-style: normal;
+      font-weight: 200 700;
+      font-display: swap;
+      src: url("/fonts/Oswald.woff2") format("woff2");
+    }
 
-        .poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
+    .poppins-thin {
+      font-family: "Poppins", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+    }
 
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
+    .poppins-extralight {
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+      font-style: normal;
+    }
 
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
+    .poppins-light {
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
 
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+    .poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
 
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
+    .poppins-medium {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
 
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
+    .poppins-semibold {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+    }
 
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
+    .poppins-bold {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
 
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
+    .poppins-extrabold {
+      font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+    }
 
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
+    .poppins-black {
+      font-family: "Poppins", sans-serif;
+      font-weight: 900;
+      font-style: normal;
+    }
 
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
+    .poppins-thin-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 100;
+      font-style: italic;
+    }
 
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
+    .poppins-extralight-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+      font-style: italic;
+    }
 
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
+    .poppins-light-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-style: italic;
+    }
 
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
+    .poppins-regular-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: italic;
+    }
 
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
+    .poppins-medium-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: italic;
+    }
 
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
+    .poppins-semibold-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-style: italic;
+    }
 
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
+    .poppins-bold-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-style: italic;
+    }
 
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
+    .poppins-extrabold-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      font-style: italic;
+    }
 
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
-
-        .bangers-font {
-            font-family: "Bangers", system-ui;
-        }
-
-        .carter-font {
-            font-family: "Carter One", cursive;
-        }
-
-        .ovo-font {
-            font-family: "Ovo", serif;
-        }
-
-        .open-sans {
-            font-family: "Open Sans", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            /* Replace <weight> with actual values like 300, 400, 600, etc. */
-            font-style: normal;
-            font-variation-settings: "wdth" 100;
-        }
+    .poppins-black-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 900;
+      font-style: italic;
+    }
 
 
-        .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-        }
+    .bangers-font {
+      font-family: "Bangers", system-ui;
+    }
 
-        .scrollbar-hide {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
+    .carter-font {
+      font-family: "Carter One", cursive;
+    }
+
+    .ovo-font {
+      font-family: "Ovo", serif;
+    }
+
+    .open-sans {
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      /* Replace <weight> with actual values like 300, 400, 600, etc. */
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
+
+
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
 </head>
 
 
 
 <body class="bg-[#c1d9e9] text-gray-900">
- <!-- Navigation Bar -->
-<nav class="relative bg-[#CCEFFF] p-5 flex items-center justify-between z-50">
-  <!-- Logo -->
-  <div class="flex-shrink-0">
-    <img src="./assets/logo.png" alt="Team Meeting" class="h-[50px] object-contain">
-  </div>
+  <!-- Navigation Bar -->
+  <nav class="relative bg-[#CCEFFF] p-5 flex items-center justify-between z-50">
+    <!-- Logo -->
+    <div class="flex-shrink-0">
+      <img src="./assets/logo.png" alt="Team Meeting" class="h-[50px] object-contain">
+    </div>
 
-  <!-- Desktop Navigation -->
-  <ul class="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 space-x-[40px] items-center">
-    <!-- Home -->
-    <li class="relative group">
-      <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Home</a>
-      <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
-        opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-        <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
-        <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
-      </div>
-    </li>
+    <!-- Desktop Navigation -->
+    <ul
+      class="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 space-x-[40px] items-center">
+      <!-- Home -->
+      <li class="relative group">
+        <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Home</a>
+        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+                opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
+          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
 
-    <!-- Services -->
-    <li class="relative group">
-      <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">Services</a>
-      <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
-        opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-        
-        <!-- Projects Submenu -->
-        <div class="relative group/sub">
-          <a href="main.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
-            Projects <span class="ml-2">›</span>
-          </a>
-          <div class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
-            opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
-            <a href="medical.html" class="block px-4 py-2 hover:bg-gray-100">Medical & Agricultural support</a>
-              <a href="education.html" class="block px-4 py-2 hover:bg-gray-100">Solar energy</a>
-            <a href="secondumuavulu.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
-            <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
-            <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
-            <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
-            <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
-            <a href="workdone.html" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
-            <a href="nomoney.html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
-            <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
-            <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
-            <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
-          </div>
-        </div>
+          <!-- project section -->
+          <div class="relative group/sub">
+            <a href="main.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Projects <span class="ml-2">›</span>
+            </a>
+            <div
+              class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+                        opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
 
-        <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
-        <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
-      </div>
-    </li>
+              <div class="relative group/medsupport">
+                <a href="medical.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                  Medical & Agricultural Support <span class="ml-2">›</span>
+                </a>
+                <div
+                  class="absolute left-full top-0 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+                                     opacity-0 invisible group-hover/medsupport:opacity-100 group-hover/medsupport:visible transition-all duration-200 z-50">
+                  <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+                  <a href="nomoney.html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+                  <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking
+                    Nonagenarian</a>
 
-    <li>
-      <a href="about-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a>
-    </li>
-    <li>
-      <a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a>
-    </li>
-  </ul>
+                  <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+                  <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery
+                    Project</a>
 
-  <!-- Mobile Menu Trigger -->
-  <div class="md:hidden cursor-pointer text-3xl" onclick="toggleMobileMenu()">☰</div>
+                </div>
+              </div>
 
-  <!-- Mobile Navigation -->
-  <ul id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white flex-col space-y-4 mt-2 p-4 shadow-lg z-50">
-    <!-- Home Mobile -->
-    <li class="relative">
-      <a href="#" onclick="toggleSubMenu('homeSubMenu', event)" class="ovo-font text-xl hover:text-blue-500 open-sans block">Home ▾</a>
-      <div id="homeSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
-        <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
-        <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
-      </div>
-    </li>
+              <div class="relative group/medsupport">
+                <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                  Solar energy <span class="ml-2">›</span>
+                </a>
+                <div
+                  class="absolute left-full top-0 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+                                     opacity-0 invisible group-hover/medsupport:opacity-100 group-hover/medsupport:visible transition-all duration-200 z-50">
+                  <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">first
+                    Umuavulu Home solar</a>
+                  <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">second
+                    Umuavulu Solar</a>
 
-    <!-- Services Mobile -->
-    <li class="relative">
-      <a href="#" onclick="toggleSubMenu('servicesSubMenu', event)" class="ovo-font text-xl hover:text-blue-500 open-sans block">Services ▾</a>
-      <div id="servicesSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
-        
-        <!-- Projects Mobile Submenu -->
-        <div class="relative">
-          <a href="#" onclick="toggleSubMenu('projectsSubMenuMobile', event)" 
-            class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
-            Projects ▾
-          </a>
-          <div id="projectsSubMenuMobile" class="hidden ml-4 mt-2 bg-[#CCEFFF] rounded-md border border-gray-200">
-              <a href="medical.html" class="block px-4 py-2 hover:bg-gray-100">Medical & Agricultural support</a>
-              <a href="education.html" class="block px-4 py-2 hover:bg-gray-100">Solar energy</a>
-              <a href="secondumuavulu.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
-              <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
-              <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
-              <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
-              <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+                </div>
+              </div>
+
               <a href="workdone.html" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
-              <a href="nomoney.html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
-              <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
-              <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
-              <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+
+              <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational
+                Assistance</a>
+            </div>
+          </div>
+
+          <!-- blog section -->
+          <div class="relative group/sub">
+            <a href="blog.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Blog <span class="ml-2">›</span>
+            </a>
+            <div
+              class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+                        opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
+              <div class="relative group/medsupport">
+                <a href="mercy.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                  Random Act of Mercy <span class="ml-2">›</span>
+                </a>
+                <div
+                  class="absolute left-full top-0 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+                                     opacity-0 invisible group-hover/medsupport:opacity-100 group-hover/medsupport:visible transition-all duration-200 z-50">
+                  <a href="mercy.html" class="block px-4 py-2 hover:bg-gray-100">COVID-19 Rescue
+                    Project</a>
+
+                </div>
+              </div>
+              <div class="relative group/sub">
+                <div class="relative group/medsupport">
+                  <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                    L&G For Solar <span class="ml-2">›</span>
+                  </a>
+                  <div
+                    class="absolute left-full top-0 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+                                             opacity-0 invisible group-hover/medsupport:opacity-100 group-hover/medsupport:visible transition-all duration-200 z-50">
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">The Case Of Solar</a>
+                    <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Who is Wawasa</a>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
+      </li>
 
-        <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
-        <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
-      </div>
-    </li>
+      <!-- Services -->
+      <li class="relative group">
+        <a href="about-us-new.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Services</a>
+        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+                opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <a href="what.html" class="block px-4 py-2 hover:bg-gray-100">What We Do</a>
+          <a href="whodoesthework.html" class="block px-4 py-2 hover:bg-gray-100">Who Does The Work</a>
+          <a href="whywedothis.html" class="block px-4 py-2 hover:bg-gray-100">Why We Do This Work</a>
+          <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
+        </div>
+      </li>
 
-    <li>
-      <a href="about-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">About Us</a>
-    </li>
-    <li>
-      <a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">Contact Us</a>
-    </li>
-  </ul>
-</nav>
-  
-    
+      <!-- About -->
+      <li class="relative group">
+        <a href="about-us-new.html" class="ovo-font text-xl hover:text-blue-500 open-sans">About</a>
+        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+                opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
 
-     
-      <!-- ONE -->
-<div>
- <!-- Title -->
- <div class="text-center mt-8">
-    <h1 id="headingText" class="poppins-bold text-2xl font-bold">Change Change Change</h1>
-  </div>
+          <div class="relative group/sub">
+            <a href="about-us-new.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              About Us
+            </a>
+          </div>
 
-  <!-- Main Section -->
-  <section class="flex flex-col md:flex-row justify-center items-start gap-8 mt-10 px-4">
-    <!-- Left Box -->
-    <div class="flex flex-col md:flex-row gap-4 items-stretch">
+          <!-- sponsor -->
+          <div class="relative group/sub">
+            <a href="sponsor.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Sponsor <span class="ml-2">›</span>
+            </a>
+            <div
+              class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+                        opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
+              <a href="sponsor.html" class="block px-4 py-2 hover:bg-gray-100">Sponsor</a>
+            </div>
+          </div>
+
+          <a href="whodoesthework.html" class="block px-4 py-2 hover:bg-gray-100">Associates</a>
+          <a href="contact-us.html" class="block px-4 py-2 hover:bg-gray-100">Contact Us</a>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Mobile Menu Trigger -->
+    <div class="md:hidden cursor-pointer text-3xl" onclick="toggleMobileMenu()">☰</div>
+
+    <!-- Mobile Navigation -->
+    <ul id="mobileMenu"
+      class="hidden md:hidden fixed top-[80px] left-0 w-full bg-[#CCEFFF] flex-col space-y-4 p-4 z-40 overflow-y-auto max-h-[calc(100vh-80px)]">
+
+      <!-- Home -->
+      <li class="relative">
+        <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans flex justify-between items-center"
+          onclick="toggleSubMenu('homeSubMenu', event)">
+          Home
+          <span id="arrow-homeSubMenu" class="ml-2 text-2xl transition-transform">›</span>
+        </a>
+        <div id="homeSubMenu" class="hidden w-full bg-[#CCEFFF] rounded-md border border-gray-200">
+          <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
+          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
+
+          <!-- Project Section -->
+          <div class="relative">
+            <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+              onclick="toggleSubMenu('projectsSubMenu', event)">
+              Projects <span id="arrow-projectsSubMenu" class="ml-2 text-2xl transition-transform">›</span>
+            </a>
+            <div id="projectsSubMenu" class="hidden w-full bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200">
+
+              <!-- Medical & Agricultural Support -->
+              <div class="relative">
+                <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+                  onclick="toggleSubMenu('medicalSubMenu', event)">
+                  Medical & Agricultural Support <span id="arrow-medicalSubMenu"
+                    class="ml-2 text-2xl transition-transform">›</span>
+                </a>
+                <div id="medicalSubMenu" class="hidden w-full bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200">
+                  <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+                  <a href="nomoney.html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+                  <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
+                  <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+                  <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery Project</a>
+                </div>
+              </div>
+
+              <!-- Solar Energy -->
+              <div class="relative">
+                <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+                  onclick="toggleSubMenu('solarSubMenu', event)">
+                  Solar Energy <span id="arrow-solarSubMenu" class="ml-2 text-2xl transition-transform">›</span>
+                </a>
+                <div id="solarSubMenu" class="hidden w-full bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200">
+                  <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home
+                    Solar</a>
+                  <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Solar</a>
+                </div>
+              </div>
+
+              <a href="workdone.html" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
+              <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
+            </div>
+          </div>
+
+          <!-- Blog Section -->
+          <div class="relative">
+            <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+              onclick="toggleSubMenu('blogSubMenu', event)">
+              Blog <span id="arrow-blogSubMenu" class="ml-2 text-2xl transition-transform">›</span>
+            </a>
+
+            <!-- Blog Dropdown Menu -->
+            <div id="blogSubMenu"
+              class="hidden flex-col w-full bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200">
+
+              <!-- Random Act of Mercy -->
+               <div class="relative">
+                <a href="mercy.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                  Random Act of Mercy <span class="ml-2">›</span>
+                </a>
+                <div class=" group-hover:flex flex-col w-full bg-[#CCEFFF] border-t border-gray-200">
+                  <a href="mercy.html" class="block px-4 py-2 hover:bg-gray-100">COVID-19 Rescue Project</a>
+                </div>
+              </div>
+
+              <!-- Solar Energy -->
+              <div class="relative">
+                <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+                  onclick="toggleSubMenu('solarSubMenu', event)">
+                  Solar Energy <span class="ml-2 text-2xl transition-transform">›</span>
+                </a>
+                <div id="solarSubMenu" class=" flex-col w-full bg-[#CCEFFF] border-t border-gray-200">
+                  <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home
+                    Solar</a>
+                  <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Solar</a>
+                </div>
+              </div>
+
+              <!-- Other Blog Links -->
+              <a href="workdone.html" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
+              <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
+            </div>
+          </div>
+
+
+        </div>
+      </li>
+
+      <!-- Services -->
+      <li class="relative">
+        <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans flex justify-between items-center"
+          onclick="toggleSubMenu('servicesSubMenu', event)">
+          Services
+          <span id="arrow-servicesSubMenu" class="ml-2 text-2xl transition-transform">›</span>
+        </a>
+        <div id="servicesSubMenu" class="hidden w-full bg-[#CCEFFF] rounded-md border border-gray-200">
+          <a href="what.html" class="block px-4 py-2 hover:bg-gray-100">What We Do</a>
+          <a href="whodoesthework.html" class="block px-4 py-2 hover:bg-gray-100">Who Does The Work</a>
+          <a href="whywedothis.html" class="block px-4 py-2 hover:bg-gray-100">Why We Do This Work</a>
+          <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
+        </div>
+      </li>
+
+      <!-- About -->
+      <li class="relative">
+        <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans flex justify-between items-center"
+          onclick="toggleSubMenu('aboutSubMenu', event)">
+          About
+          <span id="arrow-aboutSubMenu" class="ml-2 text-2xl transition-transform">›</span>
+        </a>
+        <div id="aboutSubMenu" class="hidden w-full bg-[#CCEFFF] rounded-md border border-gray-200">
+          <a href="about-us-new.html" class="block px-4 py-2 hover:bg-gray-100">About Us</a>
+          <a href="sponsor.html" class="block px-4 py-2 hover:bg-gray-100">Sponsor</a>
+          <a href="whodoesthework.html" class="block px-4 py-2 hover:bg-gray-100">Associates</a>
+          <a href="contact-us.html" class="block px-4 py-2 hover:bg-gray-100">Contact Us</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+
+
+
+  <!-- ONE -->
+  <div>
+    <!-- Title -->
+    <div class="text-center mt-8">
+      <h1 id="headingText" class="poppins-bold text-2xl font-bold">Change Change Change</h1>
+    </div>
+
+    <!-- Main Section -->
+    <section class="flex flex-col md:flex-row justify-center items-start gap-8 mt-10 px-4">
       <!-- Left Box -->
-      <div id="textBox" class="bg-[#d4f1ff] rounded-xl shadow-lg p-6 max-w-md border border-gray-500 flex-1">
-        <h2 class="poppins-bold text-xl font-bold mb-4 text-center">Change is Here</h2>
-        <p class="poppins-bold text-base mb-4">You probably noticed a change in the looks of bmpUnited website.</p>
-        <p class="poppins-bold text-base mb-4">Nothing wrong with your eyes. The change is from us: adapting to changes in the business environment.</p>
-        <p class="poppins-bold text-base mb-4">As the Greek philosopher, Heraclitus, observed many years ago,</p>
-        <p class="poppins-bold text-base italic">“The only constant in life is change”.</p>
+      <div class="flex flex-col md:flex-row gap-4 items-stretch">
+        <!-- Left Box -->
+        <div id="textBox" class="bg-[#d4f1ff] rounded-xl shadow-lg p-6 max-w-md border border-gray-500 flex-1">
+          <h2 class="poppins-bold text-xl font-bold mb-4 text-center">Change is Here</h2>
+          <p class="poppins-bold text-base mb-4">You probably noticed a change in the looks of bmpUnited website.</p>
+          <p class="poppins-bold text-base mb-4">Nothing wrong with your eyes. The change is from us: adapting to
+            changes in the business environment.</p>
+          <p class="poppins-bold text-base mb-4">As the Greek philosopher, Heraclitus, observed many years ago,</p>
+          <p class="poppins-bold text-base italic">“The only constant in life is change”.</p>
+        </div>
+
+        <!-- Right Box -->
+        <div id="RighttextBox" class="bg-[#d4f1ff] rounded-xl shadow-lg p-6 max-w-md border border-gray-500 flex-1">
+          <h2 class="poppins-bold text-xl font-bold mb-4 text-center">Our Response</h2>
+          <p class="poppins-bold text-base mb-4">
+            Ignore changes in your operating business environment, and your business will self-destruct and collapse
+            from within. We never want that to happen.
+          </p>
+          <p class="poppins-bold text-base mb-4">
+            Our change process will be gradual and measured to minimize mistakes, as we learn.
+          </p>
+          <p class="poppins-bold text-base">
+            bmpUnited welcomes your patience and understanding as we embrace change.
+          </p>
+        </div>
       </div>
-    
-      <!-- Right Box -->
-      <div id="RighttextBox" class="bg-[#d4f1ff] rounded-xl shadow-lg p-6 max-w-md border border-gray-500 flex-1">
-        <h2 class="poppins-bold text-xl font-bold mb-4 text-center">Our Response</h2>
-        <p class="poppins-bold text-base mb-4">
-          Ignore changes in your operating business environment, and your business will self-destruct and collapse from within. We never want that to happen.
-        </p>
-        <p class="poppins-bold text-base mb-4">
-          Our change process will be gradual and measured to minimize mistakes, as we learn.
-        </p>
-        <p class="poppins-bold text-base">
-          bmpUnited welcomes your patience and understanding as we embrace change.
-        </p>
+
+    </section>
+
+    <!-- Message Box Button -->
+    <div onclick="openVideoPopup()" id="messageBox"
+      class="hidden cursor-pointer flex-col bg-[#d4f1ff] rounded-xl mt-12 shadow-lg p-6 mr-[20%] ml-[20%] border border-gray-500">
+
+      <h2 class="poppins-bold text-base sm:text-sm md:text-xl font-bold mb-4 text-center">
+        People seem to misunderstand money (See Videos)
+      </h2>
+
+    </div>
+
+
+    <!-- Popup Modal -->
+    <div id="videoPopup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+      <div class="bg-white rounded-lg overflow-hidden shadow-xl w-full max-w-2xl relative">
+
+        <!-- Close Button -->
+        <button onclick="closeVideoPopup()"
+          class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+
+        <!-- Video -->
+        <video id="popupVideo" controls class="w-full h-[350px]">
+          <source id="videoSource" src="./assets/vid1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- Next Button -->
+        <div class="flex justify-center p-4">
+          <button onclick="playNextVideo()"
+            class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+            Next Video
+          </button>
+        </div>
+
       </div>
     </div>
-    
-  </section>
 
-<!-- Message Box Button -->
-<div onclick="openVideoPopup()" 
-  id="messageBox" 
-  class="hidden cursor-pointer flex-col bg-[#d4f1ff] rounded-xl mt-12 shadow-lg p-6 mr-[20%] ml-[20%] border border-gray-500">
-  
-  <h2 class="poppins-bold text-base sm:text-sm md:text-xl font-bold mb-4 text-center">
-    People seem to misunderstand money (See Videos)
-  </h2>
-
-</div>
-
-
-<!-- Popup Modal -->
-<div id="videoPopup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
-  <div class="bg-white rounded-lg overflow-hidden shadow-xl w-full max-w-2xl relative">
-    
-    <!-- Close Button -->
-    <button onclick="closeVideoPopup()" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
-
-    <!-- Video -->
-    <video id="popupVideo" controls class="w-full h-[350px]">
-      <source id="videoSource" src="./assets/vid1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-
-    <!-- Next Button -->
-    <div class="flex justify-center p-4">
-      <button onclick="playNextVideo()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-        Next Video
-      </button>
-    </div>
 
   </div>
-</div>
-  
 
-</div>
 
-  
 
   <!-- Button -->
-  <div  class="text-center mt-10">
-    <button id="backText" onclick="Next()" class="poppins-bold bg-black text-white py-2 px-6 rounded-full font-semibold hover:bg-gray-800">Read More</button>
+  <div class="text-center mt-10">
+    <button id="backText" onclick="Next()"
+      class="poppins-bold bg-black text-white py-2 px-6 rounded-full font-semibold hover:bg-gray-800">Read More</button>
   </div>
- 
-    <div
-        class="flex flex-col justify-center items-center h-[200px] bg-[url('./assets/image4.png')] bg-no-repeat bg-right-bottom bg-[length:150px_150px]">
-        <!-- Social Icons -->
-        <div class="bottom-[-200px] flex flex-row space-x-4">
-            <img src="./assets/facebook.png" alt="Facebook" class="object-contain rounded-lg ">
-            <img src="./assets/in.png" alt="LinkedIn" class="object-contain rounded-lg ">
-             <a href="https://wa.me/18583370785?text=Hello%20BmpUnited%2C%20I%20need%20assistance" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/whatsapp.png" alt="WhatsApp" class="object-contain rounded-lg w-6 h-6">
-          </a>
-        </div>
 
-        <!-- Footer Section -->
-        <div class="flex items-center justify-center w-full p-4 
-            ">
-            <p class="text-center">
-                Copyright &copy; 2025 <span class="mx-2 open-sans">bmpUnited.</span> <span class="mx-2 open-sans">All
-                    rights
-                    reserved.</span> </p>
-        </div>
+  <div
+    class="flex flex-col justify-center items-center h-[200px] bg-[url('./assets/image4.png')] bg-no-repeat bg-right-bottom bg-[length:150px_150px]">
+    <!-- Social Icons -->
+    <div class="bottom-[-200px] flex flex-row space-x-4">
+      <img src="./assets/facebook.png" alt="Facebook" class="object-contain rounded-lg ">
+      <img src="./assets/in.png" alt="LinkedIn" class="object-contain rounded-lg ">
+      <a href="https://wa.me/18583370785?text=Hello%20BmpUnited%2C%20I%20need%20assistance" target="_blank"
+        rel="noopener noreferrer">
+        <img src="./assets/whatsapp.png" alt="WhatsApp" class="object-contain rounded-lg w-6 h-6">
+      </a>
     </div>
+
+    <!-- Footer Section -->
+    <div class="flex items-center justify-center w-full p-4 
+            ">
+      <p class="text-center">
+        Copyright &copy; 2025 <span class="mx-2 open-sans">bmpUnited.</span> <span class="mx-2 open-sans">All
+          rights
+          reserved.</span> </p>
+    </div>
+  </div>
 
 
 </body>
@@ -392,129 +568,135 @@
 </html>
 
 <script>
-    window.onload = function () {
-      let position = 1;
-      const back = document.getElementById('backText');
-      let backText = back.innerHTML;
-  
-      const Next = () => {
-        if (position === 1) {
-          position = 2;
-          document.getElementById('messageBox').classList.remove('hidden');
-          document.getElementById('RighttextBox').classList.remove('hidden');
-          const headings = document.getElementById('headingText');
-          headings.innerHTML = 'Reasons why';
-  
-          // left textbox
-          const box = document.getElementById('textBox');
-          const heading = box.querySelector('h2');
-          const paragraphs = box.querySelectorAll('p');
-          heading.textContent = 'So why change?';
-          paragraphs[0].textContent = 'Beyond the fact that change is  inevitable; It turns out that in rushing to  be all things to all people during and  after  COVID-19,  we  probably overextended ourselves. More importantly, our contracts were  not fulfilled as signed by beneficiaries.   Zero % interest loans notwithstanding.';
-          paragraphs[1].textContent = '';
-          paragraphs[2].textContent = '';
-          paragraphs[3].textContent = '';
-  
-          // righttextbox
-          const rbox = document.getElementById('RighttextBox');
-          const rheading = rbox.querySelector('h2');
-          const rparagraphs = rbox.querySelectorAll('p');
-  
-          rheading.textContent = 'Slow or non-payment';
-          rparagraphs[0].textContent = 'A 17% success rate is not sustainable  under any condition. One must choose  to ignore reality and go under or take  corrective steps... We chose the latter. To  offer you a cup half full and still stay in  service.';
-          rparagraphs[1].textContent = '';
-          rparagraphs[2].textContent = '';
-          rparagraphs[3].textContent = '';
-  
-        } else if (position === 2) {
-          position = 3;
-          document.getElementById('messageBox').classList.add('hidden');
-          document.getElementById('RighttextBox').classList.remove('hidden');
-          const headings = document.getElementById('headingText');
-          headings.innerHTML = 'Our new Ways';
-  
-          // lefttextbox
-          const box = document.getElementById('textBox');
-          const heading = box.querySelector('h2');
-          const paragraphs = box.querySelectorAll('p');
-  
-          heading.textContent = 'What to Expect';
-          paragraphs[0].innerHTML = 'Education, Healthcare, and Acts of Mercy remain as before, but on a reduced and a farther-reaching scale.<br>Beneficiaries are challenged to connect the dots. Connecting the dots means linking proposed project expenditures to expected results and benefits in a very credible manner with hard evidence.'
-          paragraphs[1].textContent = '';
-          paragraphs[2].textContent = '';
-          paragraphs[3].textContent = '';
-  
-          // righttextbox
-          const rbox = document.getElementById('RighttextBox');
-          const rheading = rbox.querySelector('h2');
-          const rparagraphs = rbox.querySelectorAll('p');
-  
-          rheading.textContent = 'New way to suceed';
-          rparagraphs[0].textContent = ' As bmpUnited shies away from  transferring cash to your account to  fund projects, we have dramatically  increased counseling and coaching to  upgrade your human capital so that  when you do projects you know exactly  what you should do to become  successful.';
-          rparagraphs[1].textContent = '';
-          rparagraphs[2].textContent = '';
-          rparagraphs[3].textContent = '';
-  
-        } else if (position === 3) {
-          position = 4; // ❗️fixed (removed `let`)
-          document.getElementById('RighttextBox').classList.add('hidden');
-          const headings = document.getElementById('headingText');
-          headings.innerHTML = 'What you need to know';
-  
-          // lefttextbox
-          const box = document.getElementById('textBox');
-          const heading = box.querySelector('h2');
-          const paragraphs = box.querySelectorAll('p');
-          const back = document.getElementById('backText');
-          back.innerHTML = 'Back';
-          backText = back.innerHTML;
-  
-          heading.textContent = '';
-          paragraphs[0].textContent = 'In an upcoming book, Money Disorder, we intend to show how the  success or failure of your projects and business is not dependent on  money. Yes, money helps to close the deal. But being successful and  achieving your goals are dependent upon Je Ne Sais Quoi (JNSQ) or  What It Takes (WIT). More details coming soon.';
-          paragraphs[1].textContent = '';
-          paragraphs[2].textContent = '';
-          paragraphs[3].textContent = '';
-  
-        } else if (position === 4) {
-            if (backText === "Back") {
-  window.open('pages.html', '_blank');
-}
+  window.onload = function () {
+    let position = 1;
+    const back = document.getElementById('backText');
+    let backText = back.innerHTML;
 
+    const Next = () => {
+      if (position === 1) {
+        position = 2;
+        document.getElementById('messageBox').classList.remove('hidden');
+        document.getElementById('RighttextBox').classList.remove('hidden');
+        const headings = document.getElementById('headingText');
+        headings.innerHTML = 'Reasons why';
+
+        // left textbox
+        const box = document.getElementById('textBox');
+        const heading = box.querySelector('h2');
+        const paragraphs = box.querySelectorAll('p');
+        heading.textContent = 'So why change?';
+        paragraphs[0].textContent = 'Beyond the fact that change is  inevitable; It turns out that in rushing to  be all things to all people during and  after  COVID-19,  we  probably overextended ourselves. More importantly, our contracts were  not fulfilled as signed by beneficiaries.   Zero % interest loans notwithstanding.';
+        paragraphs[1].textContent = '';
+        paragraphs[2].textContent = '';
+        paragraphs[3].textContent = '';
+
+        // righttextbox
+        const rbox = document.getElementById('RighttextBox');
+        const rheading = rbox.querySelector('h2');
+        const rparagraphs = rbox.querySelectorAll('p');
+
+        rheading.textContent = 'Slow or non-payment';
+        rparagraphs[0].textContent = 'A 17% success rate is not sustainable  under any condition. One must choose  to ignore reality and go under or take  corrective steps... We chose the latter. To  offer you a cup half full and still stay in  service.';
+        rparagraphs[1].textContent = '';
+        rparagraphs[2].textContent = '';
+        rparagraphs[3].textContent = '';
+
+      } else if (position === 2) {
+        position = 3;
+        document.getElementById('messageBox').classList.add('hidden');
+        document.getElementById('RighttextBox').classList.remove('hidden');
+        const headings = document.getElementById('headingText');
+        headings.innerHTML = 'Our new Ways';
+
+        // lefttextbox
+        const box = document.getElementById('textBox');
+        const heading = box.querySelector('h2');
+        const paragraphs = box.querySelectorAll('p');
+
+        heading.textContent = 'What to Expect';
+        paragraphs[0].innerHTML = 'Education, Healthcare, and Acts of Mercy remain as before, but on a reduced and a farther-reaching scale.<br>Beneficiaries are challenged to connect the dots. Connecting the dots means linking proposed project expenditures to expected results and benefits in a very credible manner with hard evidence.'
+        paragraphs[1].textContent = '';
+        paragraphs[2].textContent = '';
+        paragraphs[3].textContent = '';
+
+        // righttextbox
+        const rbox = document.getElementById('RighttextBox');
+        const rheading = rbox.querySelector('h2');
+        const rparagraphs = rbox.querySelectorAll('p');
+
+        rheading.textContent = 'New way to suceed';
+        rparagraphs[0].textContent = ' As bmpUnited shies away from  transferring cash to your account to  fund projects, we have dramatically  increased counseling and coaching to  upgrade your human capital so that  when you do projects you know exactly  what you should do to become  successful.';
+        rparagraphs[1].textContent = '';
+        rparagraphs[2].textContent = '';
+        rparagraphs[3].textContent = '';
+
+      } else if (position === 3) {
+        position = 4; // ❗️fixed (removed `let`)
+        document.getElementById('RighttextBox').classList.add('hidden');
+        const headings = document.getElementById('headingText');
+        headings.innerHTML = 'What you need to know';
+
+        // lefttextbox
+        const box = document.getElementById('textBox');
+        const heading = box.querySelector('h2');
+        const paragraphs = box.querySelectorAll('p');
+        const back = document.getElementById('backText');
+        back.innerHTML = 'Back';
+        backText = back.innerHTML;
+
+        heading.textContent = '';
+        paragraphs[0].textContent = 'In an upcoming book, Money Disorder, we intend to show how the  success or failure of your projects and business is not dependent on  money. Yes, money helps to close the deal. But being successful and  achieving your goals are dependent upon Je Ne Sais Quoi (JNSQ) or  What It Takes (WIT). More details coming soon.';
+        paragraphs[1].textContent = '';
+        paragraphs[2].textContent = '';
+        paragraphs[3].textContent = '';
+
+      } else if (position === 4) {
+        if (backText === "Back") {
+          window.open('pages.html', '_blank');
         }
-      };
-  
-      // make Next globally accessible
-      window.Next = Next;
+
+      }
     };
-  </script>
-  
-  
-  <script>
-    function toggleMobileMenu() {
-      const mobileMenu = document.getElementById('mobileMenu');
-      mobileMenu.classList.toggle('hidden');
-    }
-    
-    function toggleSubMenu(id, event) {
-      event.preventDefault();
-      const subMenu = document.getElementById(id);
-      subMenu.classList.toggle('hidden');
-      
-      // Close other submenus
-      const allSubmenus = document.querySelectorAll('[id$="SubMenu"]');
-      allSubmenus.forEach(menu => {
-        if(menu.id !== id && !menu.classList.contains('hidden')) {
-          menu.classList.add('hidden');
-        }
-      });
-    }
-    </script>
 
-  
+    // make Next globally accessible
+    window.Next = Next;
+  };
+</script>
+
+
+<script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('hidden');
+  }
+
+  function toggleSubMenu(id, event) {
+    event.preventDefault();
+    const submenu = document.getElementById(id);
+    const arrow = document.getElementById('arrow-' + id);
+    if (submenu.classList.contains('hidden')) {
+      submenu.classList.remove('hidden');
+      arrow.classList.add('rotate-90');
+    } else {
+      submenu.classList.add('hidden');
+      arrow.classList.remove('rotate-90');
+    }
+  }
+
+  function toggleSubMenu(id, event) {
+    event.preventDefault();
+    const subMenu = document.getElementById(id);
+    subMenu.classList.toggle('hidden');
+  }
+
+</script>
+
+
 <script>
   let currentVideoIndex = 0;
   const videos = [
-    './assets/vid1.mp4', 
+    './assets/vid1.mp4',
     './assets/vid2.mp4'
   ];
 

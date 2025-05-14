@@ -2,243 +2,439 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>…United To Serve Others</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>…United To Serve Others</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Ovo&display=swap');
-        @import "tailwindcss";
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Ovo&display=swap');
+    @import "tailwindcss";
 
-        @font-face {
-            font-family: Oswald;
-            font-style: normal;
-            font-weight: 200 700;
-            font-display: swap;
-            src: url("/fonts/Oswald.woff2") format("woff2");
-        }
+    @font-face {
+      font-family: Oswald;
+      font-style: normal;
+      font-weight: 200 700;
+      font-display: swap;
+      src: url("/fonts/Oswald.woff2") format("woff2");
+    }
 
-        .bangers-font {
-            font-family: "Bangers", system-ui;
-        }
+    .bangers-font {
+      font-family: "Bangers", system-ui;
+    }
 
-        .carter-font {
-            font-family: "Carter One", cursive;
-        }
+    .carter-font {
+      font-family: "Carter One", cursive;
+    }
 
-        .ovo-font {
-            font-family: "Ovo", serif;
-        }
+    .ovo-font {
+      font-family: "Ovo", serif;
+    }
 
-        .open-sans {
-            font-family: "Open Sans", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            /* Replace <weight> with actual values like 300, 400, 600, etc. */
-            font-style: normal;
-            font-variation-settings: "wdth" 100;
-        }
+    .open-sans {
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      /* Replace <weight> with actual values like 300, 400, 600, etc. */
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
 
 
-        .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-        }
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
 
-        .scrollbar-hide {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
 </head>
 
 
 
 <body class="bg-white text-gray-900">
-<!-- Navigation Bar -->
-<nav class="relative bg-[#CCEFFF] p-5 flex items-center justify-between z-50">
+  <!-- Navigation Bar -->
+  <nav class="relative bg-[#CCEFFF] p-5 flex items-center justify-between z-50">
     <!-- Logo -->
     <div class="flex-shrink-0">
       <img src="./assets/logo.png" alt="Team Meeting" class="h-[50px] object-contain">
     </div>
-  
+
     <!-- Desktop Navigation -->
-    <ul class="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 space-x-[40px] items-center">
+    <ul
+      class="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 space-x-[40px] items-center">
       <!-- Home -->
       <li class="relative group">
         <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Home</a>
         <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
-          opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
           <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
           <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
-        </div>
-      </li>
-  
-      <!-- Services -->
-      <li class="relative group">
-        <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">Services</a>
-        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
-          opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-          
-          <!-- Projects Submenu -->
+
+          <!-- project section -->
           <div class="relative group/sub">
             <a href="main.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
               Projects <span class="ml-2">›</span>
             </a>
-            <div class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
-              opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
-              <a href="medical.html" class="block px-4 py-2 hover:bg-gray-100">Medical & Agricultural support</a>
-                <a href="education.html" class="block px-4 py-2 hover:bg-gray-100">Solar energy</a>
-              <a href="secondumuavulu.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
-              <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
-              <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
-              <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
-              <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+            <div
+              class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+                        opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
+
+              <div class="relative group/medsupport">
+                <a href="medical.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                  Medical & Agricultural Support <span class="ml-2">›</span>
+                </a>
+                <div
+                  class="absolute left-full top-0 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+                                     opacity-0 invisible group-hover/medsupport:opacity-100 group-hover/medsupport:visible transition-all duration-200 z-50">
+                  <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+                  <a href="nomoney.html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+                  <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking
+                    Nonagenarian</a>
+
+                  <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+                  <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery
+                    Project</a>
+
+                </div>
+              </div>
+
+              <div class="relative group/medsupport">
+                <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                  Solar energy <span class="ml-2">›</span>
+                </a>
+                <div
+                  class="absolute left-full top-0 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+                                     opacity-0 invisible group-hover/medsupport:opacity-100 group-hover/medsupport:visible transition-all duration-200 z-50">
+                  <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">first
+                    Umuavulu Home solar</a>
+                  <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">second
+                    Umuavulu Solar</a>
+
+                </div>
+              </div>
+
               <a href="workdone.html" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
-              <a href="nomoney.html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
-              <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
-              <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
-              <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+
+              <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational
+                Assistance</a>
             </div>
           </div>
-  
-          <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
+
+          <!-- blog section -->
+          <div class="relative group/sub">
+            <a href="blog.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Blog <span class="ml-2">›</span>
+            </a>
+            <div
+              class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+                        opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
+              <div class="relative group/medsupport">
+                <a href="mercy.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                  Random Act of Mercy <span class="ml-2">›</span>
+                </a>
+                <div
+                  class="absolute left-full top-0 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+                                     opacity-0 invisible group-hover/medsupport:opacity-100 group-hover/medsupport:visible transition-all duration-200 z-50">
+                  <a href="mercy.html" class="block px-4 py-2 hover:bg-gray-100">COVID-19 Rescue
+                    Project</a>
+
+                </div>
+              </div>
+              <div class="relative group/sub">
+                <div class="relative group/medsupport">
+                  <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                    L&G For Solar <span class="ml-2">›</span>
+                  </a>
+                  <div
+                    class="absolute left-full top-0 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+                                             opacity-0 invisible group-hover/medsupport:opacity-100 group-hover/medsupport:visible transition-all duration-200 z-50">
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">The Case Of Solar</a>
+                    <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Who is Wawasa</a>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- Services -->
+      <li class="relative group">
+        <a href="about-us-new.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Services</a>
+        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+                opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <a href="what.html" class="block px-4 py-2 hover:bg-gray-100">What We Do</a>
+          <a href="whodoesthework.html" class="block px-4 py-2 hover:bg-gray-100">Who Does The Work</a>
+          <a href="whywedothis.html" class="block px-4 py-2 hover:bg-gray-100">Why We Do This Work</a>
           <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
         </div>
       </li>
-  
-      <li>
-        <a href="about-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">About Us</a>
-      </li>
-      <li>
-        <a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Contact Us</a>
+
+      <!-- About -->
+      <li class="relative group">
+        <a href="about-us-new.html" class="ovo-font text-xl hover:text-blue-500 open-sans">About</a>
+        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+                opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+
+          <div class="relative group/sub">
+            <a href="about-us-new.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              About Us
+            </a>
+          </div>
+
+          <!-- sponsor -->
+          <div class="relative group/sub">
+            <a href="sponsor.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Sponsor <span class="ml-2">›</span>
+            </a>
+            <div
+              class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+                        opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
+              <a href="sponsor.html" class="block px-4 py-2 hover:bg-gray-100">Sponsor</a>
+            </div>
+          </div>
+
+          <a href="whodoesthework.html" class="block px-4 py-2 hover:bg-gray-100">Associates</a>
+          <a href="contact-us.html" class="block px-4 py-2 hover:bg-gray-100">Contact Us</a>
+        </div>
       </li>
     </ul>
-  
+
     <!-- Mobile Menu Trigger -->
     <div class="md:hidden cursor-pointer text-3xl" onclick="toggleMobileMenu()">☰</div>
-  
+
     <!-- Mobile Navigation -->
-    <ul id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white flex-col space-y-4 mt-2 p-4 shadow-lg z-50">
-      <!-- Home Mobile -->
+    <ul id="mobileMenu"
+      class="hidden md:hidden fixed top-[80px] left-0 w-full bg-[#CCEFFF] flex-col space-y-4 p-4 z-40 overflow-y-auto max-h-[calc(100vh-80px)]">
+
+      <!-- Home -->
       <li class="relative">
-        <a href="#" onclick="toggleSubMenu('homeSubMenu', event)" class="ovo-font text-xl hover:text-blue-500 open-sans block">Home ▾</a>
-        <div id="homeSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
+        <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans flex justify-between items-center"
+          onclick="toggleSubMenu('homeSubMenu', event)">
+          Home
+          <span id="arrow-homeSubMenu" class="ml-2 text-2xl transition-transform">›</span>
+        </a>
+        <div id="homeSubMenu" class="hidden w-full bg-[#CCEFFF] rounded-md border border-gray-200">
           <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
           <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
-        </div>
-      </li>
-  
-      <!-- Services Mobile -->
-      <li class="relative">
-        <a href="#" onclick="toggleSubMenu('servicesSubMenu', event)" class="ovo-font text-xl hover:text-blue-500 open-sans block">Services ▾</a>
-        <div id="servicesSubMenu" class="hidden mt-2 ml-4 bg-[#CCEFFF] rounded-md border border-gray-200">
-          
-          <!-- Projects Mobile Submenu -->
+
+          <!-- Project Section -->
           <div class="relative">
-            <a href="#" onclick="toggleSubMenu('projectsSubMenuMobile', event)" 
-              class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
-              Projects ▾
+            <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+              onclick="toggleSubMenu('projectsSubMenu', event)">
+              Projects <span id="arrow-projectsSubMenu" class="ml-2 text-2xl transition-transform">›</span>
             </a>
-            <div id="projectsSubMenuMobile" class="hidden ml-4 mt-2 bg-[#CCEFFF] rounded-md border border-gray-200">
-                <a href="medical.html" class="block px-4 py-2 hover:bg-gray-100">Medical & Agricultural support</a>
-                <a href="education.html" class="block px-4 py-2 hover:bg-gray-100">Solar energy</a>
-                <a href="secondumuavulu.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu</a>
-                <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Home Solar</a>
-                <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home Solar</a>
-                <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery Projects</a>
-                <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
-                <a href="workdone.html" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
-                <a href="nomoney.html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
-                <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
-                <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
-                <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+            <div id="projectsSubMenu" class="hidden w-full bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200">
+
+              <!-- Medical & Agricultural Support -->
+              <div class="relative">
+                <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+                  onclick="toggleSubMenu('medicalSubMenu', event)">
+                  Medical & Agricultural Support <span id="arrow-medicalSubMenu"
+                    class="ml-2 text-2xl transition-transform">›</span>
+                </a>
+                <div id="medicalSubMenu" class="hidden w-full bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200">
+                  <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
+                  <a href="nomoney.html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
+                  <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking Nonagenarian</a>
+                  <a href="farm.html" class="block px-4 py-2 hover:bg-gray-100">Going to the Farms</a>
+                  <a href="piggery.html" class="block px-4 py-2 hover:bg-gray-100">The Piggery Project</a>
+                </div>
+              </div>
+
+              <!-- Solar Energy -->
+              <div class="relative">
+                <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+                  onclick="toggleSubMenu('solarSubMenu', event)">
+                  Solar Energy <span id="arrow-solarSubMenu" class="ml-2 text-2xl transition-transform">›</span>
+                </a>
+                <div id="solarSubMenu" class="hidden w-full bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200">
+                  <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home
+                    Solar</a>
+                  <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Solar</a>
+                </div>
+              </div>
+
+              <a href="workdone.html" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
+              <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
             </div>
           </div>
-  
-          <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
+
+          <!-- Blog Section -->
+          <div class="relative">
+            <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+              onclick="toggleSubMenu('blogSubMenu', event)">
+              Blog <span id="arrow-blogSubMenu" class="ml-2 text-2xl transition-transform">›</span>
+            </a>
+
+            <!-- Blog Dropdown Menu -->
+            <div id="blogSubMenu"
+              class="hidden flex-col w-full bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200">
+
+              <!-- Random Act of Mercy -->
+               <div class="relative">
+                <a href="mercy.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                  Random Act of Mercy <span class="ml-2">›</span>
+                </a>
+                <div class=" group-hover:flex flex-col w-full bg-[#CCEFFF] border-t border-gray-200">
+                  <a href="mercy.html" class="block px-4 py-2 hover:bg-gray-100">COVID-19 Rescue Project</a>
+                </div>
+              </div>
+
+              <!-- Solar Energy -->
+              <div class="relative">
+                <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+                  onclick="toggleSubMenu('solarSubMenu', event)">
+                  Solar Energy <span class="ml-2 text-2xl transition-transform">›</span>
+                </a>
+                <div id="solarSubMenu" class=" flex-col w-full bg-[#CCEFFF] border-t border-gray-200">
+                  <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">First Umuavulu Home
+                    Solar</a>
+                  <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">Second Umuavulu Solar</a>
+                </div>
+              </div>
+
+              <!-- Other Blog Links -->
+              <a href="workdone.html" class="block px-4 py-2 hover:bg-gray-100">Work Done</a>
+              <a href="eduassist.html" class="block px-4 py-2 hover:bg-gray-100">Educational Assistance</a>
+            </div>
+          </div>
+
+
+        </div>
+      </li>
+
+      <!-- Services -->
+      <li class="relative">
+        <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans flex justify-between items-center"
+          onclick="toggleSubMenu('servicesSubMenu', event)">
+          Services
+          <span id="arrow-servicesSubMenu" class="ml-2 text-2xl transition-transform">›</span>
+        </a>
+        <div id="servicesSubMenu" class="hidden w-full bg-[#CCEFFF] rounded-md border border-gray-200">
+          <a href="what.html" class="block px-4 py-2 hover:bg-gray-100">What We Do</a>
+          <a href="whodoesthework.html" class="block px-4 py-2 hover:bg-gray-100">Who Does The Work</a>
+          <a href="whywedothis.html" class="block px-4 py-2 hover:bg-gray-100">Why We Do This Work</a>
           <a href="testimonials.html" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
         </div>
       </li>
-  
-      <li>
-        <a href="about-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">About Us</a>
-      </li>
-      <li>
-        <a href="contact-us.html" class="ovo-font text-xl hover:text-blue-500 open-sans block">Contact Us</a>
+
+      <!-- About -->
+      <li class="relative">
+        <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans flex justify-between items-center"
+          onclick="toggleSubMenu('aboutSubMenu', event)">
+          About
+          <span id="arrow-aboutSubMenu" class="ml-2 text-2xl transition-transform">›</span>
+        </a>
+        <div id="aboutSubMenu" class="hidden w-full bg-[#CCEFFF] rounded-md border border-gray-200">
+          <a href="about-us-new.html" class="block px-4 py-2 hover:bg-gray-100">About Us</a>
+          <a href="sponsor.html" class="block px-4 py-2 hover:bg-gray-100">Sponsor</a>
+          <a href="whodoesthework.html" class="block px-4 py-2 hover:bg-gray-100">Associates</a>
+          <a href="contact-us.html" class="block px-4 py-2 hover:bg-gray-100">Contact Us</a>
+        </div>
       </li>
     </ul>
   </nav>
 
-  
+
   <!-- Main Content -->
   <main class="px-4 py-16">
     <div class="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-md border border-gray-200">
       <h1 class="text-2xl md:text-3xl font-semibold text-center text-blue-500 mb-6">
-       No Money
+        No Money
       </h1>
       <p class="text-gray-800 leading-relaxed mb-4">
-        On Feb 13, 2021, the mother of one of our  volunteers was seriously sick. When asked his course of action, he said, “I will invite a nurse to check on her”. Why not a doctor, we asked. “To go to a doctor is very expensive”, he replied. “Why can’t you take her to the hospital”, we persisted. “I am not prepared to take her to the hospital now. I’m thinking that after she is tested at home then I will get her some drugs”.“What are the symptoms?”, we asked. “It started with weakness, fever, constant sleeping. Her lips and tongue are filled with boils. Right now she can’t reason properly. For the past two days, she didn’t eat anything”. “Can you take a picture of the boils so that we can research it?”, we asked. We told him that the fever may mean that her body is fighting an infection. 
-        We further suggested he convince his mother to eat some food so that she may regain some strength. We also suggested that a lot of fluid could help to bring the fever down.
+        On Feb 13, 2021, the mother of one of our  volunteers was seriously sick. When asked his course of action, he
+        said, “I will invite a nurse to check on her”. Why not a doctor, we asked. “To go to a doctor is very
+        expensive”, he replied. “Why can’t you take her to the hospital”, we persisted. “I am not prepared to take her
+        to the hospital now. I’m thinking that after she is tested at home then I will get her some drugs”.“What are the
+        symptoms?”, we asked. “It started with weakness, fever, constant sleeping. Her lips and tongue are filled with
+        boils. Right now she can’t reason properly. For the past two days, she didn’t eat anything”. “Can you take a
+        picture of the boils so that we can research it?”, we asked. We told him that the fever may mean that her body
+        is fighting an infection.
+        We further suggested he convince his mother to eat some food so that she may regain some strength. We also
+        suggested that a lot of fluid could help to bring the fever down.
       </p>
       <p class="text-gray-800 leading-relaxed mb-4">
-        The following day our client reported that a pharmacist did a test and couldn’t find anything. It is unknown why he decided to invite a pharmacist instead of the original plan to invite a nurse. Not that any of the choices would have made a difference . All of his choices, so far, constituted a waste of valuable time that could make a difference between life and death.“Where are the rest of your relatives; we thought you had a sister?”, we continued our questioning. “I have, but they don’t have money to take our mother to the hospital” , he replied. The latter response shocked us. One would expect the family to rally around and jointly make decisions, with everyone contributing what they can, money or simply words of comfort to their sick mother. But no. Everyone, but our associate stayed away from home because “they had no money”.
-        When the associate was finally convinced to take his mother to the hospital by sending him some money, under bmpUnited RAMK service, the findings were astonishing. The Packed Cell Volume or PCV was at 21 per cent. The normal level is 35.5 to 44.9 percent. The doctor said she was anemic and required blood transfusion before her infection can be treated with antibiotics. Her blood sugar level was normal.
+        The following day our client reported that a pharmacist did a test and couldn’t find anything. It is unknown why
+        he decided to invite a pharmacist instead of the original plan to invite a nurse. Not that any of the choices
+        would have made a difference . All of his choices, so far, constituted a waste of valuable time that could make
+        a difference between life and death.“Where are the rest of your relatives; we thought you had a sister?”, we
+        continued our questioning. “I have, but they don’t have money to take our mother to the hospital” , he replied.
+        The latter response shocked us. One would expect the family to rally around and jointly make decisions, with
+        everyone contributing what they can, money or simply words of comfort to their sick mother. But no. Everyone,
+        but our associate stayed away from home because “they had no money”.
+        When the associate was finally convinced to take his mother to the hospital by sending him some money, under
+        bmpUnited RAMK service, the findings were astonishing. The Packed Cell Volume or PCV was at 21 per cent. The
+        normal level is 35.5 to 44.9 percent. The doctor said she was anemic and required blood transfusion before her
+        infection can be treated with antibiotics. Her blood sugar level was normal.
       </p>
       <p class="text-gray-800 leading-relaxed mb-4">
-        Lessons learned: Without bmpUnited Advocacy service, our client would have treated his mother with medications prescribed by a nurse without tests conducted in an approved laboratory to backup the prescription. It is no wonder there is rampant avoidable losses of lives.
+        Lessons learned: Without bmpUnited Advocacy service, our client would have treated his mother with medications
+        prescribed by a nurse without tests conducted in an approved laboratory to backup the prescription. It is no
+        wonder there is rampant avoidable losses of lives.
       </p>
     </div>
   </main>
 
 
-    <div
-    
-        class="flex flex-col justify-center items-center h-[200px] bg-[url('./assets/image4.png')] bg-no-repeat bg-right-bottom bg-[length:150px_150px]">
-        <!-- Social Icons -->
-        <div class="bottom-[-200px] flex flex-row space-x-4">
-            <img src="./assets/facebook.png" alt="Facebook" class="object-contain rounded-lg ">
-            <img src="./assets/in.png" alt="LinkedIn" class="object-contain rounded-lg ">
-             <a href="https://wa.me/18583370785?text=Hello%20BmpUnited%2C%20I%20need%20assistance" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/whatsapp.png" alt="WhatsApp" class="object-contain rounded-lg w-6 h-6">
-          </a>
-        </div>
-
-        <!-- Footer Section -->
-        <div class="flex items-center justify-center w-full p-4 
-            ">
-            <p class="text-center">
-                Copyright &copy; 2025 <span class="mx-2 open-sans">bmpUnited.</span> <span class="mx-2 open-sans">All
-                    rights
-                    reserved.</span> </p>
-        </div>
+  <div
+    class="flex flex-col justify-center items-center h-[200px] bg-[url('./assets/image4.png')] bg-no-repeat bg-right-bottom bg-[length:150px_150px]">
+    <!-- Social Icons -->
+    <div class="bottom-[-200px] flex flex-row space-x-4">
+      <img src="./assets/facebook.png" alt="Facebook" class="object-contain rounded-lg ">
+      <img src="./assets/in.png" alt="LinkedIn" class="object-contain rounded-lg ">
+      <a href="https://wa.me/18583370785?text=Hello%20BmpUnited%2C%20I%20need%20assistance" target="_blank"
+        rel="noopener noreferrer">
+        <img src="./assets/whatsapp.png" alt="WhatsApp" class="object-contain rounded-lg w-6 h-6">
+      </a>
     </div>
+
+    <!-- Footer Section -->
+    <div class="flex items-center justify-center w-full p-4 
+            ">
+      <p class="text-center">
+        Copyright &copy; 2025 <span class="mx-2 open-sans">bmpUnited.</span> <span class="mx-2 open-sans">All
+          rights
+          reserved.</span> </p>
+    </div>
+  </div>
 
 
 </body>
 
 </html>
 
+
 <script>
-    function toggleMobileMenu() {
-      const mobileMenu = document.getElementById('mobileMenu');
-      mobileMenu.classList.toggle('hidden');
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('hidden');
+  }
+
+  function toggleSubMenu(id, event) {
+    event.preventDefault();
+    const submenu = document.getElementById(id);
+    const arrow = document.getElementById('arrow-' + id);
+    if (submenu.classList.contains('hidden')) {
+      submenu.classList.remove('hidden');
+      arrow.classList.add('rotate-90');
+    } else {
+      submenu.classList.add('hidden');
+      arrow.classList.remove('rotate-90');
     }
-    
-    function toggleSubMenu(id, event) {
-      event.preventDefault();
-      const subMenu = document.getElementById(id);
-      subMenu.classList.toggle('hidden');
-      
-      // Close other submenus
-      const allSubmenus = document.querySelectorAll('[id$="SubMenu"]');
-      allSubmenus.forEach(menu => {
-        if(menu.id !== id && !menu.classList.contains('hidden')) {
-          menu.classList.add('hidden');
-        }
-      });
-    }
-    </script>
-  
-  
+  }
+
+  function toggleSubMenu(id, event) {
+    event.preventDefault();
+    const subMenu = document.getElementById(id);
+    subMenu.classList.toggle('hidden');
+  }
+
+</script>

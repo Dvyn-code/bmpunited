@@ -247,25 +247,32 @@
 
 </html>
 
+
 <script>
-    function toggleMobileMenu() {
-      const mobileMenu = document.getElementById('mobileMenu');
-      mobileMenu.classList.toggle('hidden');
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('hidden');
+  }
+
+  function toggleSubMenu(id, event) {
+    event.preventDefault();
+    const submenu = document.getElementById(id);
+    const arrow = document.getElementById('arrow-' + id);
+    if (submenu.classList.contains('hidden')) {
+      submenu.classList.remove('hidden');
+      arrow.classList.add('rotate-90');
+    } else {
+      submenu.classList.add('hidden');
+      arrow.classList.remove('rotate-90');
     }
-    
-    function toggleSubMenu(id, event) {
-      event.preventDefault();
-      const subMenu = document.getElementById(id);
-      subMenu.classList.toggle('hidden');
-      
-      // Close other submenus
-      const allSubmenus = document.querySelectorAll('[id$="SubMenu"]');
-      allSubmenus.forEach(menu => {
-        if(menu.id !== id && !menu.classList.contains('hidden')) {
-          menu.classList.add('hidden');
-        }
-      });
-    }
-    </script>
+  }
+
+  function toggleSubMenu(id, event) {
+    event.preventDefault();
+    const subMenu = document.getElementById(id);
+    subMenu.classList.toggle('hidden');
+  }
+
+</script>
   
   
