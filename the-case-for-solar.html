@@ -141,7 +141,7 @@
                                 <div
                                     class="absolute left-full top-0 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
                                      opacity-0 invisible group-hover/medsupport:opacity-100 group-hover/medsupport:visible transition-all duration-200 z-50">
-                                    <a href="mercy.html" class="block px-4 py-2 hover:bg-gray-100">COVID-19 Rescue
+                                    <a href="covid.html" class="block px-4 py-2 hover:bg-gray-100">COVID-19 Rescue
                                         Project</a>
 
                                 </div>
@@ -292,11 +292,12 @@
 
                             <!-- Random Act of Mercy -->
                             <div class="relative">
-                                <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                                <a href="mercy.html"
+                                    class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
                                     Random Act of Mercy <span class="ml-2">›</span>
                                 </a>
                                 <div class=" group-hover:flex flex-col w-full bg-[#CCEFFF] border-t border-gray-200">
-                                    <a href="mercy.html" class="block px-4 py-2 hover:bg-gray-100">COVID-19 Rescue
+                                    <a href="covid.html" class="block px-4 py-2 hover:bg-gray-100">COVID-19 Rescue
                                         Project</a>
                                 </div>
                             </div>
@@ -358,44 +359,58 @@
             </li>
         </ul>
     </nav>
-    <div class="max-w-5xl mx-auto px-4 py-10">
-        <div class="flex flex-col md:flex-row gap-8 items-start">
 
-            <!-- Image + Caption -->
-            <div class="md:w-1/2">
-                <img src="./assets/sponsor.jpg" alt="Action Photo" class="rounded shadow-md w-full" />
-                <p class="mt-2 text-sm italic text-gray-700">
-                    Above, we are excited to share some action photos taken with a Nikon D7200 at Chapman’s Peak, Cape
-                    Town, South Africa in February, 2018.
-                </p>
+
+
+
+
+    <!-- Background Wrapper -->
+    <div class="mt-10 bg-no-repeat bg-cover bg-center" style="background-image: url('./assets/image5.png');">
+        <!-- The case for solar Section -->
+
+        <section class="py-16 bg-white bg-opacity-90">
+            <h3 class="  text-2xl font-bold text-blue-500 mb-8 text-center ovo-font">Making a case for solar
+            </h3>
+
+            <div class="max-w-6xl mx-auto rounded-xl shadow-md p-8 border border-gray-200 bg-white">
+
+                <!-- Header Section -->
+
+                <div class="mb-12 ">
+
+                    <p class="text-gray-700 max-w-3xl mx-auto mb-6 open-sans text-justify">
+                        Many still see solar energy as far away from their homes and businesses as the Sun that produces
+                        it. That needs to change.
+                        The attached essay attempts to shed some light on the concept of solar energy to help everyone,
+                        especially in Africa, to find ways to make friends with the sun.
+                        The obstacle that prevents this friendship from occurring and blossoming is economic. A change
+                        in government policies all across Africa is urgently needed to minimize, and even eradicate the
+                        obstacle.
+                    </p>
+
+                    <p class="font-bold text-gray-800 mb-6 open-sans text-center">
+                        Please read the essay and leave your comments.
+                    </p>
+
+                    <div class="text-center">
+                        <a href="./assets/A-Compelling-Case-for-Solar-Energy.pdf" target="_blank"
+                            class="open-sans inline-block bg-[#10B3FD] hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                            Click Here To Read The Essay
+                        </a>
+                    </div>
+                </div>
+
             </div>
-
-            <!-- Text Content -->
-            <div class="md:w-1/2 text-justify">
-                <p class="mb-4">
-                    The administrator of bmpUnited worked in Information Technology (IT) for over forty years, perhaps
-                    longer than his life-time role model Bill Gates. Just like Bill Gates, the industry was kind and
-                    user friendly to this administrator, although not to the same magnitude as Bill Gates. What makes a
-                    difference is what one does with what they have.
-                </p>
-                <p class="mb-4">
-                    bmpUnited was created amidst the COVID-19 pandemic in 2020, to give needed services to others, and
-                    show gratitude for a fun IT career. The complete details are published in an autobiography:
-                    <a href="https://shop.ingramspark.com/b/084?ZhbfzH5mBWozMVINjEA4D8SAgiblVL5RSNYQsiqITH0"
-                        class="text-blue-600 italic hover:underline">Young Man In A Hurry</a>.
-                </p>
-            </div>
-
-        </div>
+        </section>
     </div>
 
-    <div
-        class="flex flex-col justify-center items-center h-[200px]">
+
+    <div class="flex flex-col justify-center items-center h-[200px]">
         <!-- Social Icons -->
         <div class="bottom-[-200px] flex flex-row space-x-4">
             <img src="./assets/facebook.png" alt="Facebook" class="object-contain rounded-lg ">
             <img src="./assets/in.png" alt="LinkedIn" class="object-contain rounded-lg ">
-             <a href="https://wa.me/18583370785?text=Hello%20bmpUnited%2C%20I%20need%20assistance" target="_blank"
+            <a href="https://wa.me/18583370785?text=Hello%20bmpUnited%2C%20I%20need%20assistance" target="_blank"
                 rel="noopener noreferrer">
                 <img src="./assets/whatsapp.png" alt="WhatsApp" class="object-contain rounded-lg w-6 h-6">
             </a>
@@ -411,27 +426,34 @@
         </div>
     </div>
 
+
 </body>
 
 </html>
 
 <script>
     function toggleMobileMenu() {
-        const mobileMenu = document.getElementById('mobileMenu');
-        mobileMenu.classList.toggle('hidden');
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+    }
+
+    function toggleSubMenu(id, event) {
+        event.preventDefault();
+        const submenu = document.getElementById(id);
+        const arrow = document.getElementById('arrow-' + id);
+        if (submenu.classList.contains('hidden')) {
+            submenu.classList.remove('hidden');
+            arrow.classList.add('rotate-90');
+        } else {
+            submenu.classList.add('hidden');
+            arrow.classList.remove('rotate-90');
+        }
     }
 
     function toggleSubMenu(id, event) {
         event.preventDefault();
         const subMenu = document.getElementById(id);
         subMenu.classList.toggle('hidden');
-
-        // Close other submenus
-        const allSubmenus = document.querySelectorAll('[id$="SubMenu"]');
-        allSubmenus.forEach(menu => {
-            if (menu.id !== id && !menu.classList.contains('hidden')) {
-                menu.classList.add('hidden');
-            }
-        });
     }
+
 </script>

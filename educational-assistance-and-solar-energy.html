@@ -5,6 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>…United To Serve Others</title>
+    <script defer>
+        document.addEventListener("DOMContentLoaded", () => {
+            const slides = document.querySelectorAll(".slide");
+            let index = 0;
+            setInterval(() => {
+                slides.forEach((s, i) => {
+                    s.classList.toggle("hidden", i !== index);
+                });
+                index = (index + 1) % slides.length;
+            }, 5000);
+        });
+
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Educational Slider
+            const eduSlides = document.querySelectorAll(".slide");
+            let eduIndex = 0;
+            setInterval(() => {
+                eduSlides.forEach((s, i) => s.classList.toggle("hidden", i !== eduIndex));
+                eduIndex = (eduIndex + 1) % eduSlides.length;
+            }, 5000);
+
+            // Solar Slider (target by ID to isolate)
+            const solarSlider = document.getElementById("solar-slider");
+            const solarSlides = solarSlider.querySelectorAll(".solar-slide");
+            let solarIndex = 0;
+            setInterval(() => {
+                solarSlides.forEach((s, i) => s.classList.toggle("hidden", i !== solarIndex));
+                solarIndex = (solarIndex + 1) % solarSlides.length;
+            }, 5000);
+        });
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
 
 
@@ -70,7 +105,7 @@
             <li class="relative group">
                 <a href="index.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Home</a>
                 <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
-                opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                     <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
                     <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited classic</a>
 
@@ -81,7 +116,7 @@
                         </a>
                         <div
                             class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
-                        opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
+                      opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
 
                             <div class="relative group/medsupport">
                                 <a href="medical.html"
@@ -90,7 +125,7 @@
                                 </a>
                                 <div
                                     class="absolute left-full top-0 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
-                                     opacity-0 invisible group-hover/medsupport:opacity-100 group-hover/medsupport:visible transition-all duration-200 z-50">
+                                   opacity-0 invisible group-hover/medsupport:opacity-100 group-hover/medsupport:visible transition-all duration-200 z-50">
                                     <a href="age.html" class="block px-4 py-2 hover:bg-gray-100">Age Gracefully</a>
                                     <a href="nomoney.html" class="block px-4 py-2 hover:bg-gray-100">No Money</a>
                                     <a href="rocking.html" class="block px-4 py-2 hover:bg-gray-100">Rocking
@@ -109,7 +144,7 @@
                                 </a>
                                 <div
                                     class="absolute left-full top-0 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
-                                     opacity-0 invisible group-hover/medsupport:opacity-100 group-hover/medsupport:visible transition-all duration-200 z-50">
+                                   opacity-0 invisible group-hover/medsupport:opacity-100 group-hover/medsupport:visible transition-all duration-200 z-50">
                                     <a href="firstumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">first
                                         Umuavulu Home solar</a>
                                     <a href="secondumuavulusolar.html" class="block px-4 py-2 hover:bg-gray-100">second
@@ -132,7 +167,7 @@
                         </a>
                         <div
                             class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
-                        opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
+                      opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
                             <div class="relative group/medsupport">
                                 <a href="mercy.html"
                                     class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
@@ -140,7 +175,7 @@
                                 </a>
                                 <div
                                     class="absolute left-full top-0 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
-                                     opacity-0 invisible group-hover/medsupport:opacity-100 group-hover/medsupport:visible transition-all duration-200 z-50">
+                                   opacity-0 invisible group-hover/medsupport:opacity-100 group-hover/medsupport:visible transition-all duration-200 z-50">
                                     <a href="mercy.html" class="block px-4 py-2 hover:bg-gray-100">COVID-19 Rescue
                                         Project</a>
 
@@ -153,7 +188,7 @@
                                     </a>
                                     <div
                                         class="absolute left-full top-0 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
-                                             opacity-0 invisible group-hover/medsupport:opacity-100 group-hover/medsupport:visible transition-all duration-200 z-50">
+                                           opacity-0 invisible group-hover/medsupport:opacity-100 group-hover/medsupport:visible transition-all duration-200 z-50">
                                         <a href="#" class="block px-4 py-2 hover:bg-gray-100">The Case Of Solar</a>
                                         <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">Who is Wawasa</a>
 
@@ -170,7 +205,7 @@
             <li class="relative group">
                 <a href="about-us-new.html" class="ovo-font text-xl hover:text-blue-500 open-sans">Services</a>
                 <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
-                opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                     <a href="what.html" class="block px-4 py-2 hover:bg-gray-100">What We Do</a>
                     <a href="whodoesthework.html" class="block px-4 py-2 hover:bg-gray-100">Who Does The Work</a>
                     <a href="whywedothis.html" class="block px-4 py-2 hover:bg-gray-100">Why We Do This Work</a>
@@ -182,7 +217,7 @@
             <li class="relative group">
                 <a href="about-us-new.html" class="ovo-font text-xl hover:text-blue-500 open-sans">About</a>
                 <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
-                opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
 
                     <div class="relative group/sub">
                         <a href="about-us-new.html"
@@ -198,7 +233,7 @@
                         </a>
                         <div
                             class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
-                        opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
+                      opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
                             <a href="sponsor.html" class="block px-4 py-2 hover:bg-gray-100">Sponsor</a>
                         </div>
                     </div>
@@ -292,11 +327,12 @@
 
                             <!-- Random Act of Mercy -->
                             <div class="relative">
-                                <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                                <a href="mercy.html"
+                                    class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
                                     Random Act of Mercy <span class="ml-2">›</span>
                                 </a>
                                 <div class=" group-hover:flex flex-col w-full bg-[#CCEFFF] border-t border-gray-200">
-                                    <a href="mercy.html" class="block px-4 py-2 hover:bg-gray-100">COVID-19 Rescue
+                                    <a href="covid.html" class="block px-4 py-2 hover:bg-gray-100">COVID-19 Rescue
                                         Project</a>
                                 </div>
                             </div>
@@ -358,44 +394,88 @@
             </li>
         </ul>
     </nav>
-    <div class="max-w-5xl mx-auto px-4 py-10">
-        <div class="flex flex-col md:flex-row gap-8 items-start">
 
-            <!-- Image + Caption -->
-            <div class="md:w-1/2">
-                <img src="./assets/sponsor.jpg" alt="Action Photo" class="rounded shadow-md w-full" />
-                <p class="mt-2 text-sm italic text-gray-700">
-                    Above, we are excited to share some action photos taken with a Nikon D7200 at Chapman’s Peak, Cape
-                    Town, South Africa in February, 2018.
-                </p>
+
+    <!-- Wrapper with Padding -->
+    <div class="px-4 sm:px-6 lg:px-40 mt-32">
+
+        <!-- Educational Assistance Section -->
+        <div class="flex flex-col lg:flex-row gap-8 items-start">
+            <!-- Image Slider -->
+            <div class="w-full lg:w-1/2">
+                <div class="relative w-full overflow-hidden rounded-lg">
+                    <img src="./assets/edu2.png" class="slide w-full h-auto object-cover rounded-lg" />
+                    <img src="./assets/edu1.png" class="slide w-full h-auto object-cover rounded-lg hidden" />
+                    <img src="./assets/edu3.png" class="slide w-full h-auto object-cover rounded-lg hidden" />
+                    <img src="./assets/edu4.png" class="slide w-full h-auto object-cover rounded-lg hidden" />
+                </div>
             </div>
 
             <!-- Text Content -->
-            <div class="md:w-1/2 text-justify">
-                <p class="mb-4">
-                    The administrator of bmpUnited worked in Information Technology (IT) for over forty years, perhaps
-                    longer than his life-time role model Bill Gates. Just like Bill Gates, the industry was kind and
-                    user friendly to this administrator, although not to the same magnitude as Bill Gates. What makes a
-                    difference is what one does with what they have.
+            <div class="w-full lg:w-1/2 space-y-4">
+                <h2 class="text-xl font-semibold">Educational Assistance & TMTF</h2>
+                <p class="text-justify leading-relaxed">
+                    <span class="text-5xl font-bold text-teal-600 float-left leading-none mr-2">b</span>mpUnited pays
+                    school fees and shares in the cost of equipment used exclusively for education, such as laptops, for
+                    children and some adults who lack sponsorship from parents or relatives. For adolescents who cannot
+                    go back to school, bmpUnited has TMTF or Teach Me To Fish program.
                 </p>
-                <p class="mb-4">
-                    bmpUnited was created amidst the COVID-19 pandemic in 2020, to give needed services to others, and
-                    show gratitude for a fun IT career. The complete details are published in an autobiography:
-                    <a href="https://shop.ingramspark.com/b/084?ZhbfzH5mBWozMVINjEA4D8SAgiblVL5RSNYQsiqITH0"
-                        class="text-blue-600 italic hover:underline">Young Man In A Hurry</a>.
+                <p class="text-justify leading-relaxed">
+                    Everyone in the community must be engaged. We believe that when people are not engaged: working,
+                    schooling (Education), learning a trade, and are not retired or sick, they are both a setback and
+                    danger to the community. This is the antithesis of bmpUnited mission.
                 </p>
             </div>
-
         </div>
+
+        <!-- Separator -->
+        <div class="my-12 border-t border-gray-300 mt-36"></div>
+
+        <!-- Solar Energy Section -->
+        <div id="solar-slider-section" class="flex flex-col lg:flex-row-reverse gap-8 items-start mt-36">
+            <!-- Image Slider (right side on large screens) -->
+            <div class="w-full lg:w-1/2">
+                <div class="relative w-full h-[300px] overflow-hidden rounded-lg" id="solar-slider">
+                    <img src="./assets/solar1.png"
+                        class="solar-slide absolute top-0 left-0 w-full h-full object-cover rounded-lg" />
+                    <img src="./assets/solar2.png"
+                        class="solar-slide absolute top-0 left-0 w-full h-full object-cover rounded-lg hidden" />
+                </div>
+            </div>
+
+            <!-- Text Content (left side on large screens) -->
+            <div class="w-full lg:w-1/2 space-y-4">
+                <h2 class="text-xl font-semibold">Solar Energy: Give Light, not darkness!</h2>
+                <p class="text-justify leading-relaxed">
+                    <span class="text-5xl font-bold text-teal-600 float-left leading-none mr-2">b</span>mpUnited’s
+                    desire is to replace the Community‘s epileptic electricity supply with predictable
+                    electricity supply, and by so doing replace Community’s darkness with light. Originally we gave
+                    loans to people and businesses we believed could afford to pay, and gave grants to those who cannot.
+                </p>
+                <p class="text-justify leading-relaxed">
+                    Not too long after we began, it was discovered that close to 40% of borrowers were either late or
+                    paid at their convenience, sometimes 3 – 6 months late, in spite of the requirements of the loan
+                    contract. These were interest-free loans! On the other hand, demands for Solar grants are
+                    insatiable. Having adequate funds is the only limitation.
+                </p>
+                <p class="text-justify leading-relaxed">
+                    The most frequently requested solar services are for Solar Security Lights.
+                </p>
+            </div>
+        </div>
+
+
     </div>
 
-    <div
-        class="flex flex-col justify-center items-center h-[200px]">
+
+
+
+    <div class="flex flex-col justify-center items-center h-[200px]">
         <!-- Social Icons -->
         <div class="bottom-[-200px] flex flex-row space-x-4">
             <img src="./assets/facebook.png" alt="Facebook" class="object-contain rounded-lg ">
             <img src="./assets/in.png" alt="LinkedIn" class="object-contain rounded-lg ">
-             <a href="https://wa.me/18583370785?text=Hello%20bmpUnited%2C%20I%20need%20assistance" target="_blank"
+            <a href="https://wa.me/18583370785?text=Hello%20bmpUnited%2C%20I%20need%20assistance" target="_blank"
                 rel="noopener noreferrer">
                 <img src="./assets/whatsapp.png" alt="WhatsApp" class="object-contain rounded-lg w-6 h-6">
             </a>
@@ -411,27 +491,35 @@
         </div>
     </div>
 
+
 </body>
 
 </html>
 
+
 <script>
     function toggleMobileMenu() {
-        const mobileMenu = document.getElementById('mobileMenu');
-        mobileMenu.classList.toggle('hidden');
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+    }
+
+    function toggleSubMenu(id, event) {
+        event.preventDefault();
+        const submenu = document.getElementById(id);
+        const arrow = document.getElementById('arrow-' + id);
+        if (submenu.classList.contains('hidden')) {
+            submenu.classList.remove('hidden');
+            arrow.classList.add('rotate-90');
+        } else {
+            submenu.classList.add('hidden');
+            arrow.classList.remove('rotate-90');
+        }
     }
 
     function toggleSubMenu(id, event) {
         event.preventDefault();
         const subMenu = document.getElementById(id);
         subMenu.classList.toggle('hidden');
-
-        // Close other submenus
-        const allSubmenus = document.querySelectorAll('[id$="SubMenu"]');
-        allSubmenus.forEach(menu => {
-            if (menu.id !== id && !menu.classList.contains('hidden')) {
-                menu.classList.add('hidden');
-            }
-        });
     }
+
 </script>
