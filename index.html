@@ -164,7 +164,7 @@
 
 <body class="bg-[#c5ccd0] text-gray-800">
   <!-- Navigation Bar -->
- <nav class="relative bg-[#CCEFFF] p-5 flex items-center justify-between z-50">
+  <nav class="relative bg-[#CCEFFF] p-5 flex items-center justify-between z-50">
     <!-- Logo -->
     <div class="flex-shrink-0">
       <img src="./assets/logo.png" alt="Team Meeting" class="h-[50px] object-contain">
@@ -179,7 +179,7 @@
         <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
                 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
           <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited Classic</a>
+          <a href="https://www.bmpa.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited Classic</a>
 
           <!-- project section -->
           <div class="relative group/sub">
@@ -315,7 +315,57 @@
         </div>
 
       </li>
+
+      <!-- Books -->
       <li class="relative group">
+        <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans">Books</a>
+        <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
+                opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+
+          <div class="relative group/sub">
+            <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Authors Website
+            </a>
+          </div>
+
+          <div class="relative group/sub">
+            <a href="https://shop.ingramspark.com/b/084?WGaEm9HS5eNvKwPFaPgUOQqafnP13XMbm9kdCYJ7Fna"
+              class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Young Man in A Hurry <span class="ml-2">›</span>
+            </a>
+            <div
+              class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+                        opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
+              <a href="https://shop.ingramspark.com/b/084?ZhbfzH5mBWozMVINjEA4D8SAgiblVL5RSNYQsiqITH0"
+                class="block px-4 py-2 hover:bg-gray-100">…Son of Mary Paperback Order</a>
+            </div>
+            <div
+              class="absolute left-full top-14 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+                        opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
+              <a href="https://shop.ingramspark.com/b/084?WGaEm9HS5eNvKwPFaPgUOQqafnP13XMbm9kdCYJ7Fna"
+                class="block px-4 py-2 hover:bg-gray-100">YMIAH…son of Mary Hardcover Order</a>
+            </div>
+          </div>
+
+          <div class="relative group/sub">
+            <a href="https://shop.ingramspark.com/b/084?WGaEm9HS5eNvKwPFaPgUOQqafnP13XMbm9kdCYJ7Fna"
+              class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              Money Disorder <span class="ml-2">›</span>
+            </a>
+            <div
+              class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
+                        opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
+              <a href="./assets/Sample-Chapter-Introduction.pdf"
+                class="block px-4 py-2 hover:bg-gray-100">Sample MD Chapter - Introduction</a>
+            </div>
+          </div>
+
+          <!-- <a href="#" class="block px-4 py-2 hover:bg-gray-100">Money Disorder</a> -->
+        </div>
+
+      </li>
+
+      <!-- <li class="relative group">
         <a href="https://shop.ingramspark.com/b/084?WGaEm9HS5eNvKwPFaPgUOQqafnP13XMbm9kdCYJ7Fna"
           class="ovo-font text-xl hover:text-blue-500 text-purple-950  open-sans">Young Man in A Hurry</a>
         <div class="absolute left-0 mt-2 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200 
@@ -325,7 +375,7 @@
           <a href="https://shop.ingramspark.com/b/084?WGaEm9HS5eNvKwPFaPgUOQqafnP13XMbm9kdCYJ7Fna"
             class="block px-4 py-2 hover:bg-gray-100">YMIAH…son of Mary Hardcover Order</a>
         </div>
-      </li>
+      </li> -->
     </ul>
 
 
@@ -345,7 +395,7 @@
         </a>
         <div id="homeSubMenu" class="hidden w-full bg-[#CCEFFF] rounded-md border border-gray-200">
           <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">bmpUnited</a>
-          <a href="https://www.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited Classic</a>
+          <a href="https://www.bmpa.bmpu.org" class="block px-4 py-2 hover:bg-gray-100">bmpUnited Classic</a>
 
           <!-- Project Section -->
           <div class="relative">
@@ -466,9 +516,30 @@
         </div>
       </li>
 
+      <!-- Books -->
+      <li class="relative">
+        <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans flex justify-between items-center"
+          onclick="toggleSubMenu('booksSubMenu', event)">
+          Books
+          <span id="arrow-booksSubMenu" class="ml-2 text-2xl transition-transform">›</span>
+        </a>
+        <div id="booksSubMenu" class="hidden w-full bg-[#CCEFFF] rounded-md border border-gray-200">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Authors Website</a>
+          <a href="https://shop.ingramspark.com/b/084?WGaEm9HS5eNvKwPFaPgUOQqafnP13XMbm9kdCYJ7Fna"
+            class="block px-4 py-2 hover:bg-gray-100">Young Man in A Hurry</a>
+          <a href="https://shop.ingramspark.com/b/084?ZhbfzH5mBWozMVINjEA4D8SAgiblVL5RSNYQsiqITH0"
+            class="block px-4 py-2 hover:bg-gray-100">…Son of Mary Paperback Order</a>
+          <a href="https://shop.ingramspark.com/b/084?WGaEm9HS5eNvKwPFaPgUOQqafnP13XMbm9kdCYJ7Fna"
+            class="block px-4 py-2 hover:bg-gray-100">YMIAH…son of Mary Hardcover Order</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Money Disorder</a>
+          <a href="./assets/Sample-Chapter-Introduction.pdf" class="block px-4 py-2 hover:bg-gray-100">Sample MD Chapter - Introduction</a>
+          
+        </div>
+      </li>
+
 
       <!-- book -->
-      <ul class="space-y-4">
+      <!-- <ul class="space-y-4">
         <li class="relative">
           <a href="#" onclick="toggleSubMenu('bookSubMenu', event)"
             class="ovo-font text-xl hover:text-blue-500 text-purple-950 open-sans flex justify-between items-center">
@@ -486,7 +557,7 @@
             </a>
           </div>
         </li>
-      </ul>
+      </ul> -->
 
 
     </ul>
@@ -514,7 +585,7 @@
   </main>
 
   <!-- Info Box -->
-  <a href="https://bmpu.org" target="_blank" rel="noopener noreferrer">
+  <a href="https://bmpa.bmpu.org" target="_blank" rel="noopener noreferrer">
     <div
       class="poppins-bold mt-16 max-w-xl mx-auto bg-[#ade3fd] text-black border-2 border-black rounded-lg p-4 text-center hover:shadow-lg transition-shadow duration-200">
       <p>
