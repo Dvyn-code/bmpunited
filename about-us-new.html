@@ -57,7 +57,7 @@
 
 <body class="bg-white text-gray-900">
     <!-- Navigation Bar -->
-    <nav class="relative bg-[#CCEFFF] p-5 flex items-center justify-between z-50">
+     <nav class="relative bg-[#CCEFFF] p-5 flex items-center justify-between z-50">
     <!-- Logo -->
     <div class="flex-shrink-0">
       <img src="./assets/logo.png" alt="Team Meeting" class="h-[50px] object-contain">
@@ -248,8 +248,8 @@
             <div
               class="absolute left-full -top-2 ml-1 w-56 bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200
                         opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 z-50">
-              <a href="./assets/Sample-Chapter-Introduction.pdf"
-                class="block px-4 py-2 hover:bg-gray-100">Sample MD Chapter - Introduction</a>
+              <a href="./assets/Sample-Chapter-Introduction.pdf" class="block px-4 py-2 hover:bg-gray-100">Sample MD
+                Chapter - Introduction</a>
             </div>
           </div>
 
@@ -269,6 +269,8 @@
             class="block px-4 py-2 hover:bg-gray-100">YMIAH…son of Mary Hardcover Order</a>
         </div>
       </li> -->
+
+
     </ul>
 
 
@@ -410,47 +412,62 @@
       </li>
 
       <!-- Books -->
+
       <li class="relative">
         <a href="#" class="ovo-font text-xl hover:text-blue-500 open-sans flex justify-between items-center"
-          onclick="toggleSubMenu('booksSubMenu', event)">
+          onclick="toggleSubMenu('homeBookSubMenu', event)">
           Books
-          <span id="arrow-booksSubMenu" class="ml-2 text-2xl transition-transform">›</span>
+          <span id="arrow-homeBookSubMenu" class="ml-2 text-2xl transition-transform">›</span>
         </a>
-        <div id="booksSubMenu" class="hidden w-full bg-[#CCEFFF] rounded-md border border-gray-200">
+        <div id="homeBookSubMenu" class="hidden w-full bg-[#CCEFFF] rounded-md border border-gray-200">
           <a href="#" class="block px-4 py-2 hover:bg-gray-100">Authors Website</a>
-          <a href="https://shop.ingramspark.com/b/084?WGaEm9HS5eNvKwPFaPgUOQqafnP13XMbm9kdCYJ7Fna"
-            class="block px-4 py-2 hover:bg-gray-100">Young Man in A Hurry</a>
-          <a href="https://shop.ingramspark.com/b/084?ZhbfzH5mBWozMVINjEA4D8SAgiblVL5RSNYQsiqITH0"
-            class="block px-4 py-2 hover:bg-gray-100">…Son of Mary Paperback Order</a>
-          <a href="https://shop.ingramspark.com/b/084?WGaEm9HS5eNvKwPFaPgUOQqafnP13XMbm9kdCYJ7Fna"
-            class="block px-4 py-2 hover:bg-gray-100">YMIAH…son of Mary Hardcover Order</a>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Money Disorder</a>
-          <a href="./assets/Sample-Chapter-Introduction.pdf" class="block px-4 py-2 hover:bg-gray-100">Sample MD Chapter - Introduction</a>
-          
-        </div>
+
+          <!-- books Section -->
+          <div class="relative">
+            <a href="https://shop.ingramspark.com/b/084?WGaEm9HS5eNvKwPFaPgUOQqafnP13XMbm9kdCYJ7Fna"
+              class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+              onclick="toggleSubMenu('ymSubMenu', event)">
+              Young Man In A Hurry <span id="arrow-ymsSubMenu" class="ml-2 text-2xl transition-transform">›</span>
+            </a>
+            <div id="ymSubMenu" class="hidden w-full bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200">
+              <!-- -->
+              <div class="relative">
+                <a href="https://shop.ingramspark.com/b/084?ZhbfzH5mBWozMVINjEA4D8SAgiblVL5RSNYQsiqITH0"
+                  class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+                  onclick="toggleSubMenu('mdSubMenu', event)">
+                  …Son of Mary Paperback Order <span id="arrow-solarSubMenu"
+                    class="ml-2 text-2xl transition-transform"></span>
+                </a>
+                <a href="https://shop.ingramspark.com/b/084?WGaEm9HS5eNvKwPFaPgUOQqafnP13XMbm9kdCYJ7Fna"
+                  class="block px-4 py-2 hover:bg-gray-100">YMIAH…son of Mary Hardcover Order</a>
+              </div>
+            </div>
+
+            <!-- Blog Section -->
+            <div class="relative">
+              <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+                onclick="toggleSubMenu('mdSubMenu', event)">
+                Money Disorder<span id="arrow-mdSubMenu" class="ml-2 text-2xl transition-transform">›</span>
+              </a>
+
+              <!-- md Dropdown Menu -->
+              <div id="mdSubMenu"
+                class="hidden flex-col w-full bg-[#CCEFFF] shadow-lg rounded-md border border-gray-200">
+
+                <!-- Random Act of Mercy -->
+                <div class="relative">
+                  <a href="./assets/Sample-Chapter-Introduction.pdf"
+                    class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                    Sample MD Chapter - Introduction<span class="ml-2"></span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
       </li>
 
-
-      <!-- book -->
-      <!-- <ul class="space-y-4">
-        <li class="relative">
-          <a href="#" onclick="toggleSubMenu('bookSubMenu', event)"
-            class="ovo-font text-xl hover:text-blue-500 text-purple-950 open-sans flex justify-between items-center">
-            Young Man in A Hurry
-            <span id="arrow-bookSubMenu" class="ml-2 text-2xl transition-transform">›</span>
-          </a>
-          <div id="bookSubMenu" class="hidden w-full bg-[#CCEFFF] rounded-md border border-gray-200">
-            <a href="https://shop.ingramspark.com/b/084?ZhbfzH5mBWozMVINjEA4D8SAgiblVL5RSNYQsiqITH0"
-              class="block px-4 py-2 hover:bg-gray-100">
-              …Son of Mary Paperback Order
-            </a>
-            <a href="https://shop.ingramspark.com/b/084?WGaEm9HS5eNvKwPFaPgUOQqafnP13XMbm9kdCYJ7Fna"
-              class="block px-4 py-2 hover:bg-gray-100">
-              YMIAH…son of Mary Hardcover Order
-            </a>
-          </div>
-        </li>
-      </ul> -->
 
 
     </ul>
